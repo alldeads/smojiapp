@@ -1,0 +1,493 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.smoji-title{
+	color: #4e54c8 !important;
+}
+
+.btn-primary {
+	background-color: #8f94fb;
+	background-image: linear-gradient(to bottom, #8f94fb, #4e54c8);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-box-shadow: 0px 3px 15px #8f94fb;
+	color: #ffffff;
+	border: 0;
+	width: 100%;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background: #656dff;
+    background: -webkit-linear-gradient(to top, #656dff, #4e54c8);
+    background: linear-gradient(to bottom, #656dff, #4e54c8);
+    box-shadow: 0px 5px 25px #656dff;
+    -ms-box-shadow: 0px 5px 25px #656dff;
+    -moz-box-shadow: 0px 5px 25px #656dff;
+    -webkit-box-shadow: 0px 5px 25px #656dff;
+    color: #ffffff;
+    border: 0;
+}
+
+.card {
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+#drawingArea {
+    background: url('images/templates/bg-canvas.png');
+    min-height: 380px;  
+    position: relative;
+}
+
+.resultContainer {
+	position: relative;
+	border: 1px solid #dee2e6;
+	min-height: 320px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+#designskins {
+	position: absolute;
+	left: 30%;
+	top: 0;
+	z-index: 1;
+}
+
+#designhairs {
+	position: absolute;
+	left: 30%;
+	top: 0;
+	z-index: 2;
+}
+
+#designeyes {
+	position: absolute;
+	left: 30%;
+	top: 0;
+	z-index: 3;
+}
+
+#designbeards {
+	position: absolute;
+	left: 30%;
+	top: 0;
+	z-index: 4;
+}
+
+#designskins > img {
+	width: 150px;
+}
+
+#designhairs > img {
+	width: 169px;
+}
+
+#designeyes > img {
+	width: 169px;
+}
+
+#designbeards > img {
+	width: 169px;
+}
+
+.resultSticker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.resultSticker > img {
+	width: 400px;
+}
+
+.resultSkin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.resultSkin > img {
+	width: 400px;
+}
+
+.resultLip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	overflow: hidden;
+}
+
+.resultEyes {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.resultHair {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+}
+
+#resultBasefemale-2 {
+	left: 3%;
+	top: 5%;
+}
+
+#resultBasefemale-3 {
+	left: 3%;
+	top: 5%;
+}
+
+#resultBasefemale-4 {
+	left: 6%;
+	top: 5%;
+}
+
+#resultBasefemale-5 {
+	top: 13%;
+}
+
+#resultBasefemale-6 {
+	top: 5%;
+	z-index: 1;
+}
+
+#resultBasefemale-7 {
+	left: 4%;
+}
+
+#resultBasefemale-8 {
+	left: 23%;
+	top: 3%;
+}
+
+#resultBasefemale-8 > img {
+	width: 280px;
+}
+
+#resultBasefemale-9 {
+	left: 12%;
+	top: 10%;
+}
+
+#resultBasefemale-9 > img {
+	width: 350px;
+}
+
+#resultBasefemale-10 {
+	left: -25%;
+}
+
+#resultBasefemale-11 {
+	left: 4%;
+	top: -3%;
+}
+
+#resultBasefemale-11 > img {
+	width: 200px;
+}
+
+#resultBasefemale-12 {
+	left: 31%;
+	top: 10%;
+}
+
+#resultBasefemale-12 > img {
+	width: 300px;
+}
+
+#resultLipfemale-1 {
+	left: 182px;
+	top: 4%;
+	transform: rotateY(-180deg);
+}
+
+#resultLipfemale-1 > img {
+	width: 55px;
+}
+
+#resultLipfemale-2 {
+	left: 179px;
+	top: 8.5%;
+	transform: rotateY(360deg);
+}
+
+#resultLipfemale-2 > img {
+	width: 60px;
+}
+
+#resultLipfemale-3 {
+	left: 158px;
+	top: 11%;
+	transform: rotateY(360deg);
+}
+
+#resultLipfemale-3 > img {
+	width: 65px;
+}
+
+#resultLipfemale-4 {
+	left: 197px;
+	top: 10%;
+	transform: rotateY(360deg);
+}
+
+#resultLipfemale-4 > img {
+	width: 43px;
+}
+
+#resultLipfemale-5 {
+	left: 234px;
+	top: 20.5%;
+	transform: rotateY(-180deg) rotate(-48deg);
+}
+
+#resultLipfemale-5 > img {
+	width: 50px;
+}
+
+#resultLipfemale-6 {
+	left: 175px;
+	top: 8.5%;
+	transform: rotateY(380deg);
+}
+
+#resultLipfemale-6 > img {
+	width: 48px;
+}
+
+#resultLipfemale-7 {
+	left: 186px;
+	top: 3.6%;
+	transform: rotateY(380deg);
+}
+
+#resultLipfemale-7 > img {
+	width: 48px;
+}
+
+#resultLipfemale-8 {
+	left: 281px;
+	top: 21.5%;
+    transform: rotateY(-180deg) rotate(-87deg);
+}
+
+#resultLipfemale-8 > img {
+	width: 50px;
+}
+
+#resultLipfemale-9 {
+	left: 230px;
+	top: 14.5%;
+    transform: rotateY(360deg);
+}
+
+#resultLipfemale-9 > img {
+	width: 55px;
+}
+
+#resultLipfemale-10 {
+	left: 77px;
+	top: 4%;
+    transform: rotateY(360deg);
+}
+
+#resultLipfemale-10 > img {
+	width: 45px;
+}
+
+#resultLipfemale-11 {
+	left: 69px;
+	top: 13%;
+    transform: rotateY(360deg);
+}
+
+#resultLipfemale-11 > img {
+	width: 80px;
+}
+
+#resultLipfemale-12 {
+	left: 237px;
+	top: 14%;
+    transform: rotateY(360deg);
+}
+
+#resultLipfemale-12 > img {
+	width: 50px;
+}
+
+#resultEyesfemale-1 {
+	left: 187px;
+	top: 0;
+    transform: rotateY(-180deg);
+}
+
+#resultEyesfemale-1 > img {
+	width: 45px;
+}
+
+#resultEyesfemale-2 {
+	left: 188px;
+	top: 5%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-2 > img {
+	width: 45px;
+}
+
+#resultEyesfemale-3 {
+	left: 163px;
+	top: 3%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-3 > img {
+	width: 60px;
+}
+
+#resultEyesfemale-4 {
+	left: 199px;
+	top: 4.5%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-4 > img {
+	width: 42px;
+}
+
+#resultEyesfemale-5 {
+	left: 256px;
+	top: 17%;
+    transform: rotateY(-180deg) rotate(-48deg);
+}
+
+#resultEyesfemale-5 > img {
+	width: 40px;
+}
+
+#resultEyesfemale-6 {
+	left: 181px;
+	top: 5%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-6 > img {
+	width: 40px;
+}
+
+#resultEyesfemale-7 {
+	left: 191px;
+	top: -1%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-7 > img {
+	width: 42px;
+}
+
+#resultEyesfemale-8 {
+	left: 305px;
+	top: 23%;
+    transform: rotateY(-180deg) rotate(-85deg);
+}
+
+#resultEyesfemale-8 > img {
+	width: 42px;
+}
+
+#resultEyesfemale-9 {
+	left: 236px;
+	top: 9%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-9 > img {
+	width: 48px;
+}
+
+#resultEyesfemale-10 {
+	left: 81px;
+	top: -1%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-10 > img {
+	width: 42px;
+}
+
+#resultEyesfemale-11 {
+	left: 74px;
+	top: 1%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-11 > img {
+	width: 80px;
+}
+
+#resultEyesfemale-12 {
+	left: 242px;
+	top: 9%;
+    transform: rotateY(360deg);
+}
+
+#resultEyesfemale-12 > img {
+	width: 45px;
+}
+
+#resultHairfemale-1 {
+	left: 163px;
+	top: -7%;
+    transform: rotateY(-180deg);
+}
+
+#resultHairfemale-1 > img {
+	width: 77px;
+}
+
+#resultHairfemale-2 {
+	left: 179px;
+	top: -2%;
+    transform: rotateY(360deg);
+}
+
+#resultHairfemale-2 > img {
+	width: 80px;
+}
+
+#resultHairfemale-3 {
+	left: 152px;
+	top: -4%;
+    transform: rotateY(360deg);
+}
+
+#resultHairfemale-3 > img {
+	width: 99px;
+}
+
+#resultHairfemale-4 {
+	left: 152px;
+	top: -4%;
+    transform: rotateY(360deg);
+}
+
+#resultHairfemale-4 > img {
+	width: 99px;
+}
