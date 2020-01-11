@@ -14,11 +14,11 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        @yield('css')
     </head>
 
     <body>
-        <div class="wrapper d-flex align-items-stretch">
+        {{-- <div class="wrapper d-flex align-items-stretch">
             <nav id="sidebar" class="active">
                 <div class="custom-menu">
                     <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -53,12 +53,12 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav> --}}
 
             <div id="content" class="p-4 p-md-5 pt-5">
                 @yield('content')
             </div>
-        </div>
+        {{-- </div> --}}
 
 
         <script

@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
 
             {{-- @for( $i = 1; $i <= ${$gender}['counts']['stickers']; $i++ ) --}}
-            @for( $i = 1; $i <= 3; $i++ )
+            @for( $i = 1; $i <= ${$gender}['counts']['free']; $i++ )
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12">
 
                     <div class="card resultContainer">
@@ -15,11 +15,11 @@
                             <div class="resultFinal">
 
                                 <div class="resultSticker">
-                                    <img src="{{ asset('images/stickers/'.$gender.'/'.$i.'.png') }}">
+                                    <img src="{{ asset('images/results/'.$subscription.'/stickers/'.$gender.'/'.$i.'.png') }}">
                                 </div>
 
-                                <div id="resultBase{{$gender . '-' . $i}}" class="resultSkin">
-                                    <img src="{{ asset("images/base/" . $gender . "/pose-" . $i . "/" . $skin_result . ".png") }}">
+                                <div id="resultBase{{$subscription.'-'.$gender . '-' . $i}}" class="resultSkin">
+                                    <img src="{{ asset('images/results/'.$subscription.'/pose/'.$gender.'/pose-'.$i.'/'.$skin_result.'-01.png') }}">
                                 </div>
 
                                 {{-- @if ( $gender == "female" )

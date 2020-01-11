@@ -18,3 +18,7 @@ Route::get('/', 'SmojiController@index');
 
 Route::get('/designer/{gender}', 'SmojiController@create');
 Route::post('/smoji/results', 'SmojiController@result');
+
+Auth::routes();
+
+Route::get('/home', 'SmojiController@index')->name('home');

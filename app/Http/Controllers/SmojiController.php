@@ -10,6 +10,7 @@ class SmojiController extends Controller
 
 	public function __construct()
 	{
+		$this->middleware('auth');
 		$arr['female']['assets'] = array(
 			'Skin', 'Eyes', 'Hair'
 		);
@@ -18,7 +19,9 @@ class SmojiController extends Controller
 			'skin' => 6,
 			'eyes' => 6,
 			'hair' => 49,
-			'stickers' => 12
+			'stickers' => 12,
+			'free' => 10,
+			'premium' => 10
 		);
 
 		$arr['male']['assets'] = array(
@@ -58,6 +61,9 @@ class SmojiController extends Controller
     	$this->data['hair_result']   = $request->inputhairs;
     	$this->data['beard_result']  = $request->inputbeards;
     	$this->data['gender']        = $request->gender;
+    	$this->data['subscription']  = "free";
+
+    	// dd($this->data['gender']);
 
     	return view('designer.result', $this->data);
     }
