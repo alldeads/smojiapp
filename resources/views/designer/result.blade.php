@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('content')
+@section('page-content')
 	<div class="container-fluid">
         <div class="row justify-content-center">
 
             {{-- @for( $i = 1; $i <= ${$gender}['counts']['stickers']; $i++ ) --}}
             @for( $i = 1; $i <= ${$gender}['counts']['free']; $i++ )
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
 
                     <div class="card resultContainer">
 
@@ -14,7 +14,7 @@
 
                             <div class="resultFinal">
 
-                                <div class="resultSticker">
+                                <div id="resultSticker{{$subscription.'-'.$gender . '-' . $i}}" class="resultSticker">
                                     <img src="{{ asset('images/results/'.$subscription.'/stickers/'.$gender.'/'.$i.'.png') }}">
                                 </div>
 
@@ -23,14 +23,12 @@
                                 </div>
 
                                 {{-- @if ( $gender == "female" )
-
-                                    <div id="resultLip{{$gender . '-' . $i}}" class="resultLip">
+                                    <div id="resultLip{{$subscription.'-'.$gender . '-' . $i}}" class="resultLip">
                                         <img src="{{ asset("images/lip/lips.png") }}">
                                     </div>
+                                @endif --}}
 
-                                @endif
-
-                                <div id="resultEyes{{$gender . '-' . $i}}" class="resultEyes">
+                                {{-- <div id="resultEyes{{$gender . '-' . $i}}" class="resultEyes">
                                     <img src="{{ asset("images/eyes/" . $gender . "/" . $eye_result . ".png") }}">
                                 </div>
 

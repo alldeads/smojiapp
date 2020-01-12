@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
-@section('content')
+@section('css')
+<style type="text/css">
+    .nav-link.active{
+        background-color: #494ca2 !important;
+    }
+</style>
+    
+@endsection
+
+@section('page-content')
 	<div class="container-fluid">
         <div class="row justify-content-center">
 

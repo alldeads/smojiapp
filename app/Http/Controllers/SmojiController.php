@@ -33,7 +33,9 @@ class SmojiController extends Controller
 			'eyes'  => 6,
 			'hair'  => 45,
 			'beard' => 13,
-			'stickers' => 11
+			'stickers' => 11,
+			'free' => 17,
+			'premium' => 10
 		);
 
 		$this->data = $arr;

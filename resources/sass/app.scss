@@ -126,7 +126,6 @@
 	top: 0;
 	left: 0;
 	z-index: 4;
-	overflow: hidden;
 }
 
 .resultEyes {
@@ -134,7 +133,6 @@
 	top: 0;
 	left: 0;
 	z-index: 5;
-	overflow: hidden;
 }
 
 .resultHair {
@@ -153,12 +151,30 @@
 	width: 380px;
 }
 
+#resultBasefree-male-1 {
+	left: 6%;
+	top: 8%;
+}
+
+#resultBasefree-male-1 > img {
+	width: 380px;
+}
+
 #resultBasefree-female-2 {
 	left: 3%;
 	top: 15%;
 }
 
 #resultBasefree-female-2 > img {
+	width: 350px;
+}
+
+#resultBasefree-male-2 {
+	left: 7%;
+	top: 11%;
+}
+
+#resultBasefree-male-2 > img {
 	width: 350px;
 }
 
@@ -182,6 +198,10 @@
 	width: 500px;
 }
 
+#resultBasefree-male-4 {
+	top: 22%;
+}
+
 #resultBasefree-female-5 {
 	left: -10%;
 	top: auto;
@@ -189,6 +209,12 @@
 
 #resultBasefree-female-5 > img {
 	width: 450px;
+}
+
+#resultBasefree-male-5 {
+	left: 6%;
+	top: 2%;
+	z-index: 1;
 }
 
 #resultBasefree-female-6 {
@@ -200,6 +226,17 @@
 	width: 350px;
 }
 
+#resultBasefree-male-6 {
+	left: -13%;
+	top: -3%;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+
+#resultBasefree-male-6 > img {
+	width: 430px;
+}
+
 #resultBasefree-female-7 {
 	left: 30%;
 	top: 4%;
@@ -209,6 +246,15 @@
 	width: 190px;
 }
 
+#resultBasefree-male-7 {
+	left: -7%;
+	top: 2%;
+}
+
+#resultBasefree-male-7 > img {
+	width: 450px;
+}
+
 #resultBasefree-female-8 {
 	left: -13%;
 	top: 2%;
@@ -216,4 +262,103 @@
 
 #resultBasefree-female-8 > img {
 	width: 450px;
+}
+
+#resultBasefree-male-8 {
+	left: -20%;
+	top: 2%;
+}
+
+#resultBasefree-male-8 > img {
+	width: 450px;
+}
+
+#resultBasefree-male-9 {
+	left: -20%;
+	top: 2%;
+}
+
+#resultBasefree-male-9 > img {
+	width: 450px;
+}
+
+#resultBasefree-male-10 {
+	left: -13%;
+	top: 4%;
+	z-index: 1;
+}
+
+#resultBasefree-male-10 > img {
+	width: 430px;
+}
+
+#resultBasefree-male-11 {
+	left: 9%;
+	top: 18%;
+}
+
+#resultBasefree-male-11 > img {
+	width: 380px;
+}
+
+#resultBasefree-male-12 {
+	left: 32%;
+	top: 10%;
+}
+
+#resultBasefree-male-12 > img {
+	width: 350px;
+}
+
+#resultBasefree-male-13 {
+	left: -24%;
+	top: 12%;
+}
+
+#resultBasefree-male-14 {
+	left: -3%;
+	top: 1%;
+}
+
+#resultBasefree-male-14 > img {
+	width: 430px;
+}
+
+#resultBasefree-male-15 {
+	left: 3%;
+}
+
+#resultBasefree-male-15 > img {
+	width: 410px;
+}
+
+#resultBasefree-male-16 {
+	left: 18%;
+	top: 6%;
+}
+
+#resultBasefree-male-16 > img {
+	width: 420px;
+}
+
+#resultStickerfree-male-17 > img {
+	width: 380px;
+}
+
+#resultBasefree-male-17 {
+	left: -5%;
+	top: 1%;
+}
+
+#resultBasefree-male-17 > img {
+	width: 430px;
+}
+
+#resultLipfree-female-1 {
+	left: 51.7%;
+	top: 14.7%;
+}
+
+#resultLipfree-female-1 > img {
+	width: 41px;
 }

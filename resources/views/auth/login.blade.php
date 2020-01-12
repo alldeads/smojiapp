@@ -1,95 +1,58 @@
 @extends('layouts.app')
 
-@section('css')
-    <style type="text/css">
-        body {
-            background-color: #4e54c8;
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-        }
-
-        .login-title {
-            font-size: 40px;
-            margin-top: 5px;
-            line-height: 50px;
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        .login-title small {
-            font-size: 30px;
-            font-weight: 300;
-        }
-
-        .form-control.rounded {
-            border-radius: 25px !important;
-        }
-
-        .btn-success, .gradient-success {
-            background-color: #12c150;
-            background-image: -webkit-linear-gradient(to top, #a8e063, #12c150);
-            background-image: linear-gradient(to bottom, #a8e063, #12c150);
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: 0px 3px 15px #12c150;
-            -ms-box-shadow: 0px 3px 15px #12c150;
-            -moz-box-shadow: 0px 3px 15px #12c150;
-            -webkit-box-shadow: 0px 3px 15px #12c150;
-            color: #ffffff;
-            border: 0;
-            width: 100%;
-            border-radius: 25px !important;
-        }
-    </style>
-@endsection
-
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-10 text-center">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo">
-            <h1 class="login-title"> <small> Welcome to,</small><br>SMOJI</h1>
-            <h5 class="text-white"> Sign in</h5>
-           
+
+<div class="page-content h-100">
+    <div class="background theme-header"><img src="img/city2.jpg" alt=""></div>
+    <div class="row mx-0 h-100 justify-content-center">
+        <div class="col-10 col-md-6 col-lg-4 my-3 mx-auto text-center align-self-center">
+            <img src="{{ asset('images/logo.png') }}" alt="" class="login-logo">
+            <h1 class="login-title"><small>Welcome to,</small><br>Smoji</h1>
+            <br>
+            <h5 class="text-white mb-4">Sign in</h5>
             <form method="POST" action="{{ route('login') }}">
                 @csrf
+                <div class="login-input-content ">
+                    <div class="form-group row justify-content-center">
+                        <div class="col-md-12">
+                            <input id="email" type="email" class="text-center form-control @error('email') is-invalid @enderror rounded" name="email" value="{{ old('email') }}" required placeholder="Email Address">
 
-                <div class="form-group row justify-content-center">
-
-                    <div class="col-md-6">
-                        <input id="email" type="email" class="text-center form-control @error('email') is-invalid @enderror rounded" name="email" value="{{ old('email') }}" required placeholder="Email Address">
-
-                        @error('email')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group row justify-content-center">
 
-                <div class="form-group row justify-content-center">
+                        <div class="col-md-12">
+                            <input id="password" type="password" class="text-center form-control @error('password') is-invalid @enderror rounded" name="password" required autocomplete="current-password" placeholder="Password">
 
-                    <div class="col-md-6">
-                        <input id="password" type="password" class="text-center form-control @error('password') is-invalid @enderror rounded" name="password" required autocomplete="current-password" placeholder="Password">
-
-                        @error('password')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
                     </div>
-                </div>
-
-                <div class="form-group row mb-0 justify-content-center">
-                    <div class="col-md-6">
-                        <button type="submit" class="btn btn-success">
-                            {{ __('Sign in') }}
-                        </button>
+                    <div class="form-group row mb-0 justify-content-center">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-block btn-success rounded border-0 z-3">
+                                {{ __('Sign in') }}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </form>
-
-            <p class="mt-4"> <a class="text-white" href="/register"> Sign Up</a></p>
+            <br>
+            <br>
+            <div class="row no-gutters">
+                <div class="col-6 text-left"><a href="#" class="text-white mt-3">Forget Password?</a></div>
+                <div class="col-6 text-right"><a href="/register" class="text-white text-center mt-3">Sign up</a></div>
+            </div>                        
         </div>
     </div>
+    <br>
 </div>
 @endsection
