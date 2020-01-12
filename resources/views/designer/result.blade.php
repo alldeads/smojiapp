@@ -22,6 +22,10 @@
                                     <img src="{{ asset('images/results/'.$subscription.'/pose/'.$gender.'/pose-'.$i.'/'.$skin_result.'-01.png') }}">
                                 </div>
 
+                                <div id="resultHair{{$subscription.'-'.$gender . '-' . $i}}" class="resultHair">
+                                    <img src="{{ asset('images/results/hair/'.$gender.'/'.$hair_result.'.png') }}">
+                                </div>
+
                                 {{-- @if ( $gender == "female" )
                                     <div id="resultLip{{$subscription.'-'.$gender . '-' . $i}}" class="resultLip">
                                         <img src="{{ asset("images/lip/lips.png") }}">
@@ -30,10 +34,6 @@
 
                                 {{-- <div id="resultEyes{{$gender . '-' . $i}}" class="resultEyes">
                                     <img src="{{ asset("images/eyes/" . $gender . "/" . $eye_result . ".png") }}">
-                                </div>
-
-                                <div id="resultHair{{$gender . '-' . $i}}" class="resultHair">
-                                    <img src="{{ asset("images/hair/" . $gender . "/" . $hair_result . ".png") }}">
                                 </div> --}}
                             </div>
 
