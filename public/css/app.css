@@ -11400,7 +11400,7 @@ a.text-dark:focus {
 .resultContainer {
   position: relative;
   border: 1px solid #dee2e6;
-  min-height: 320px;
+  min-height: 253px;
   overflow: hidden;
   margin-bottom: 5px;
 }
@@ -11437,6 +11437,16 @@ a.text-dark:focus {
   width: 150px;
 }
 
+
+#designlips{
+        position: absolute;
+        left: 30%;
+        top: 0;
+        z-index: 2;
+}
+#designlips > img {
+        width: 150px;
+}
 #designhairs > img {
   width: 169px;
 }
@@ -11457,7 +11467,7 @@ a.text-dark:focus {
 }
 
 .resultSticker > img {
-  width: 400px;
+  width: 380px;
 }
 
 .resultSkin {
@@ -11468,7 +11478,7 @@ a.text-dark:focus {
 }
 
 .resultSkin > img {
-  width: 400px;
+  width: 350px;
 }
 
 .resultLip {
@@ -11493,8 +11503,8 @@ a.text-dark:focus {
 }
 
 #resultBasefree-female-1 {
-  left: 6%;
-  top: 8%;
+  left: 0px;
+  top: 0px;
 }
 
 #resultBasefree-female-1 > img {
@@ -11502,17 +11512,17 @@ a.text-dark:focus {
 }
 
 #resultBasefree-male-1 {
-  left: 48%;
-  top: 1%;
+    left: 40.9px;
+    top: 21px;
 }
 
-#resultBasefree-male-1 > img {
-  width: 180px;
-}
+/*#resultBasefree-male-1 > img {
+  width: 100%;
+}*/
 
 #resultBasefree-female-2 {
-  left: 3%;
-  top: 15%;
+  left: 28px;
+  top: 25px;
 }
 
 #resultBasefree-female-2 > img {
@@ -11520,86 +11530,93 @@ a.text-dark:focus {
 }
 
 #resultBasefree-male-2 {
-  left: 7%;
-  top: 11%;
+    left: 179px;
+    top: 16px;
 }
 
 #resultBasefree-male-2 > img {
-  width: 350px;
+    width: 189px;
 }
 
 #resultBasefree-female-3 {
-  left: 5%;
-  top: 3%;
-  z-index: 1;
+  left: -88px;
+    top: 15px;
+    z-index: 1;
 }
 
 #resultBasefree-female-3 > img {
-  width: 400px;
+  width: 555px;
 }
 
 #resultBasefree-male-3 {
-  left: 9%;
-  top: 7%;
+    left: 0px;
+    top: 52px;
+    
 }
 
 #resultBasefree-male-3 > img {
-  width: 350px;
+  width: 441px;
 }
 
 #resultBasefree-female-4 {
-  left: -15%;
-  top: 8%;
-  z-index: 1;
+  left: 36px;
+    top: 64px;
 }
 
 #resultBasefree-female-4 > img {
-  width: 500px;
+  width: 330px;
 }
 
 #resultBasefree-male-4 {
-  top: 22%;
+    top: 39px;
+    left: 72PX;
+
+}
+#resultBasefree-male-4 img {    
+    width: 340px;
 }
 
 #resultBasefree-female-5 {
-  left: -10%;
-  top: auto;
+  left: 91px;
+    top: 57px;
 }
 
 #resultBasefree-female-5 > img {
-  width: 450px;
+  width: 250px;
 }
 
 #resultBasefree-male-5 {
-  left: 6%;
-  top: 2%;
-  z-index: 1;
+ left: 0px;
+ top: 0px;
+ 
+}
+
+#resultBasefree-male-5 img {
+  width: 349px;
 }
 
 #resultBasefree-female-6 {
-  left: 10%;
-  top: 12%;
+  left: 35px;
+   top: 6px;
+    z-index: 1;
 }
 
 #resultBasefree-female-6 > img {
-  width: 350px;
+  width: 340px;
 }
 
 #resultBasefree-male-6 {
-  left: 22%;
-  top: 3%;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  z-index: 1;
+    left: -37px;
+    top: 18px;
 }
 
 #resultBasefree-male-6 > img {
-  width: 170px;
+  width: 357px;
 }
 
 #resultBasefree-female-7 {
-  left: 30%;
-  top: 4%;
+  left: 91px;
+    top: 12px;
 }
 
 #resultBasefree-female-7 > img {
@@ -11607,49 +11624,57 @@ a.text-dark:focus {
 }
 
 #resultBasefree-male-7 {
-  left: -7%;
-  top: 2%;
+    left: 0px;
+    top: 36px;
 }
 
 #resultBasefree-male-7 > img {
-  width: 450px;
+  width: 516px;
 }
 
 #resultBasefree-female-8 {
-  left: -13%;
-  top: 2%;
+      left: -79px;
+    top: 5px;
 }
 
 #resultBasefree-female-8 > img {
   width: 450px;
 }
 
+
+#resultBasefree-female-9 {
+    left: 24px;
+    top: 7px;
+}
+#resultBasefree-female-9 > img {
+  width: 350px;
+}
+
 #resultBasefree-male-8 {
-  left: -20%;
-  top: 2%;
+  left: 130px;
+    top: 20px;
 }
 
 #resultBasefree-male-8 > img {
-  width: 450px;
+  width: 355px;
 }
 
 #resultBasefree-male-9 {
-  left: -20%;
-  top: 2%;
+     left: 28px;
+    top: 50px;
 }
 
 #resultBasefree-male-9 > img {
-  width: 450px;
+  width: 317px;
 }
 
 #resultBasefree-male-10 {
-  left: -13%;
-  top: 4%;
-  z-index: 1;
+    left: 75px;
+    top: 32px;
 }
 
 #resultBasefree-male-10 > img {
-  width: 430px;
+  width: 353px;
 }
 
 #resultBasefree-female-10 {
@@ -11719,200 +11744,341 @@ a.text-dark:focus {
 }
 
 #resultHairfree-female-1 {
-  left: 180px;
-  top: -1px;
+    left: 280px;
+    top: 27px;
+    transform: rotateY(-180deg) rotate(-17deg);
 }
 
 #resultHairfree-female-1 > img {
-  width: 81px;
+  width: 80.5px;
 }
 
 #resultHairfree-female-2 {
-  -webkit-transform: rotateY(-180deg) rotate(-34deg);
-          transform: rotateY(-180deg) rotate(-34deg);
-  left: 213px;
-  top: 29px;
+    left: 174px;
+    top: 4px;
 }
 
 #resultHairfree-female-2 > img {
-  width: 68px;
+  width: 71px;
 }
 
 #resultHairfree-female-3 {
-  left: 188px;
-  top: -11px;
+    left: 150px;
+    top: -9px;
 }
 
 #resultHairfree-female-3 > img {
-  width: 70px;
+    width: 92px;
 }
 
 #resultHairfree-female-4 {
-  left: 156px;
-  top: 4px;
+    left: 171px;
+    top: 43px;
 }
 
 #resultHairfree-female-4 > img {
-  width: 81px;
+  width: 62px;
 }
 
 #resultHairfree-female-5 {
-  left: 150px;
+    left: 183px;
+    top: 38px;
 }
 
 #resultHairfree-female-5 > img {
-  width: 75px;
+  width: 62px;
 }
 
 #resultHairfree-female-6 {
-  -webkit-transform: rotateY(-180deg) rotate(10deg);
-          transform: rotateY(-180deg) rotate(10deg);
-  left: 216px;
-  top: 8px;
-}
+   left: 179px;
+    top: -10px;
+  }
 
 #resultHairfree-female-6 > img {
-  width: 90px;
+  width: 57px;
 }
 
 #resultHairfree-female-7 {
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
-  left: 158px;
-  top: -15px;
+      left: 128px;
+    top: -17px;
 }
 
 #resultHairfree-female-7 > img {
-  width: 136px;
+  width: 139px;
 }
 
-#resultHairfree-female-8 {
-  -webkit-transform: rotateY(-180deg) rotate(32deg);
-          transform: rotateY(-180deg) rotate(32deg);
-  left: 28px;
-  top: 63px;
+#resultHairfree-female-8 {  
+    left: -7px;
+    top: 53px;
+    transform: rotateY(-180deg) rotate(22deg);
 }
 
 #resultHairfree-female-8 > img {
-  width: 87px;
+  width: 95px;
 }
 
 #resultHairfree-female-9 {
-  left: 183px;
-  top: -3px;
+    left: 183.5px;
+    top: 1px;
 }
 
 #resultHairfree-female-9 > img {
-  width: 43px;
+  width: 41px;
 }
 
 #resultHairfree-female-10 {
-  -webkit-transform: rotate(-19deg);
-          transform: rotate(-19deg);
-  left: 160px;
-  top: 13px;
+    left: 141px;
+    top: 5px;
+    transform: rotate(-19deg);
 }
 
 #resultHairfree-female-10 > img {
-  width: 65px;
+  width: 58px;
 }
 
+#resultHairfree-female-11 {
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+    left: 305px;
+    top: 21px;
+}
+
+#resultHairfree-female-11 > img {
+  width: 90px;
+}
+#resultHairfree-female-12 {
+  -webkit-transform: rotate(9deg);
+       transform: rotate(9deg);
+    left: 150px;
+    top: -19px;
+}
+
+#resultHairfree-female-12 > img {
+  width: 90px;
+}
+
+/* female eye*/
+
+#resultEyesfree-female-1 {
+    left: 309px;
+    top: 56px;
+    transform: rotate(9deg);
+}
+
+#resultEyesfree-female-1 > img {
+  width: 40px;
+}
+
+#resultEyesfree-female-2 {
+  left: 183px;
+  top: 27px;
+}
+
+#resultEyesfree-female-2 > img {
+  width: 35px;
+}
+
+#resultEyesfree-female-3 {
+  left: 163px;
+    top: 15px;
+}
+
+#resultEyesfree-female-3 > img {
+  width: 53px;
+}
+
+#resultEyesfree-female-4 {
+        left: 181px;
+    top: 64px;
+}
+
+#resultEyesfree-female-4 > img {
+  width: 31px;
+}
+
+#resultEyesfree-female-5 {
+      left: 191px;
+    top: 54px;
+}
+
+#resultEyesfree-female-5 > img {
+  width: 35px;
+}
+
+#resultEyesfree-female-6 {
+  left: 185px;
+    top: 2px;
+}
+
+#resultEyesfree-female-6 > img {
+  width: 35px;
+}
+
+#resultEyesfree-female-7 {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+    left: 145px;
+    top: 27px;
+}
+
+#resultEyesfree-female-7 > img {
+  width: 75px;
+}
+
+#resultEyesfree-female-8 {
+  -webkit-transform: rotateY(-180deg) rotate(26deg);
+      transform: rotateY(-180deg) rotate(26deg);
+    left: 29px;
+    top: 83px;
+}
+
+#resultEyesfree-female-8 > img {
+  width: 46px;
+}
+
+#resultEyesfree-female-9 {
+  left: 190px;
+  top: 15px;
+}
+
+#resultEyesfree-female-9 > img {
+  width: 20px;
+}
+
+#resultEyesfree-female-10 {
+  -webkit-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+  left: 148px;
+    top: 28px;
+}
+
+#resultEyesfree-female-10 > img {
+  width: 30px;
+}
+
+#resultEyesfemale-11 {
+  -webkit-transform: rotate(14deg);
+   transform: rotate(14deg);
+    left: 329px;
+    top: 56px;
+}
+
+#resultEyesfemale-11 > img {
+  width: 40px;
+}
+#resultEyesfemale-12 {
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+    left: 167px;
+    top: 9px;
+}
+
+#resultEyesfemale-12 > img {
+  width: 43px;
+}
+
+/* female eye*/
+
 #resultHairfree-male-1 {
-  left: 231px;
-  top: -12px;
+    left: 184px;
+    top: 9px;
 }
 
 #resultHairfree-male-1 > img {
-  width: 83px;
+  width: 57px;
 }
 
 #resultHairfree-male-2 {
-  left: 184px;
-  top: 30px;
+    left: 220px;
+    top: -1px;
 }
 
 #resultHairfree-male-2 > img {
-  width: 42px;
+  width: 88px;
 }
 
 #resultHairfree-male-3 {
-  left: 185px;
-  top: 14px;
+  left: 196px;
+    top: 44px;
 }
 
 #resultHairfree-male-3 > img {
-  width: 48px;
+  width:53px;
 }
 
 #resultHairfree-male-4 {
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  left: 82px;
-  top: 62px;
+  -webkit-transform: rotate(-32deg);
+        transform: rotate(-32deg);
+    left: 140.5px;
+    top: 29px;
 }
 
 #resultHairfree-male-4 > img {
-  width: 133px;
+  width: 115px;
 }
 
 #resultHairfree-male-5 {
-  left: 203px;
-  top: 0;
+    left: 143.4px;
+    top: -9px;
 }
 
 #resultHairfree-male-5 > img {
-  width: 47px;
+  width: 49px;
 }
 
 #resultHairfree-male-6 {
-  left: 157px;
-  top: 4px;
+    left: 121.2px;
+    top: 8px;
 }
 
 #resultHairfree-male-6 > img {
-  width: 45px;
+  width: 46px;
 }
 
 #resultHairfree-male-7 {
-  left: 159px;
-  top: -3px;
+    left: 205px;
+    top: 35.2px;
+    transform: rotate(6deg);
 }
 
 #resultHairfree-male-7 > img {
-  width: 61px;
+  width: 81px;
 }
 
 #resultHairfree-male-8 {
-  left: 121px;
-  top: -5px;
+        left: 268px;
+    top: 3px;
 }
 
 #resultHairfree-male-8 > img {
-  width: 58px;
+  width: 72px;
 }
 
 #resultHairfree-male-9 {
-  left: 121px;
-  top: -5px;
+        left: 161px;
+    top: 41px;
 }
 
 #resultHairfree-male-9 > img {
-  width: 58px;
+  width: 52px;
 }
 
-#resultHairfree-male-10 {
-  left: 135px;
-  top: 1px;
+
+ #resultHairfree-male-10 {
+        left: 261px;
+    top: 20px;
+    transform: rotate(13deg);
+
 }
 
 #resultHairfree-male-10 > img {
-  width: 61px;
+  width: 57px;
 }
 
 #resultHairfree-male-11 {
   -webkit-transform: rotate(12deg);
           transform: rotate(12deg);
-  left: 187px;
+  left: 204px;
   top: 59px;
 }
 
@@ -11921,8 +12087,8 @@ a.text-dark:focus {
 }
 
 #resultHairfree-male-12 {
-  left: 264px;
-  top: 17px;
+      left: 331px;
+    top: 20px;
 }
 
 #resultHairfree-male-12 > img {
@@ -11932,18 +12098,18 @@ a.text-dark:focus {
 #resultHairfree-male-13 {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  left: 63px;
+  left: 10px;
   top: 21px;
 }
 
 #resultHairfree-male-13 > img {
-  width: 77px;
+  width: 80px;
 }
 
 #resultHairfree-male-14 {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-  left: 168px;
+  left: 162px;
   top: -6px;
 }
 
@@ -11952,7 +12118,7 @@ a.text-dark:focus {
 }
 
 #resultHairfree-male-15 {
-  left: 180px;
+  left: 185px;
   top: -13px;
 }
 
@@ -11963,7 +12129,7 @@ a.text-dark:focus {
 #resultHairfree-male-16 {
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
-  left: 266px;
+  left: 289px;
   top: 9px;
 }
 
@@ -11972,7 +12138,7 @@ a.text-dark:focus {
 }
 
 #resultHairfree-male-17 {
-  left: 163px;
+  left: 153px;
   top: -7px;
 }
 
@@ -11980,3 +12146,974 @@ a.text-dark:focus {
   width: 60px;
 }
 
+
+#resultHairfree-male-18 {
+  left: 153px;
+  top: -7px;
+}
+
+#resultHairfree-male-18 > img {
+  width: 60px;
+}
+
+#resultHairfree-male-19 {
+  left: 153px;
+  top: -7px;
+}
+
+#resultHairfree-male-19 > img {
+  width: 60px;
+}
+
+#resultHairfree-male-20 {
+  left: 153px;
+  top: -7px;
+}
+
+#resultHairfree-male-20 > img {
+  width: 60px;
+}
+
+#resultHairfree-male-21 {
+  left: 153px;
+  top: -7px;
+}
+
+#resultHairfree-male-21 > img {
+  width: 60px;
+}
+
+/* For eye */
+#resultEyesfree-male-1 {
+    left: 199px;
+    top: 40px;
+}
+#resultEyesfree-male-1 > img {
+    width: 24px;
+}
+
+#resultEyesfree-male-2 {
+    left: 246px;
+    top: 48px;
+}
+#resultEyesfree-male-2 > img {
+    width: 34px;
+}
+#resultEyesfree-male-3 {
+        left: 210px;
+    top: 71px;
+}
+#resultEyesfree-male-3 > img {
+    width: 21px;
+}
+#resultEyesfree-male-4 {
+    left: 173px;
+    top: 96px;
+    transform: rotate(-29deg);
+}
+#resultEyesfree-male-4 > img {
+    width: 46px;
+}
+#resultEyesfree-male-5 {
+    left: 156px;
+    top: 17px;
+}
+#resultEyesfree-male-5 > img {
+    width: 21px;
+}
+#resultEyesfree-male-6 {
+    left: 133px;
+    top: 31px;
+}
+#resultEyesfree-male-6 > img {
+    width: 19px;
+}
+#resultEyesfree-male-7 {
+    left: 227px;
+    top: 81px;
+    transform: rotate(6deg);
+
+}
+#resultEyesfree-male-7 > img {
+    width: 33px;
+}
+#resultEyesfree-male-8 {
+    left: 286px;
+    top: 44px;
+}
+#resultEyesfree-male-8 > img {
+    width: 30px;
+}
+#resultEyesfree-male-9 {
+    left: 174px;
+    top: 68px;
+    transform: rotate(1deg);
+}
+#resultEyesfree-male-9 > img {
+    width: 22px;
+}
+#resultEyesfree-male-10 {
+        left: 275px;
+    top: 50px;
+    transform: rotate(18deg);
+
+}
+
+#resultEyesfree-male-10 > img {
+    width: 26px;
+}
+
+/* For eye */
+
+/* For Lisp */
+#resultLipfree-female-1 {
+    left: 305px;
+    top: 90px;
+    transform: rotateY(-180deg) rotate(-16deg);
+}
+
+#resultLipfree-female-1 > img {
+  width: 38px;
+}
+
+#resultLipfree-female-2 {
+    left: 183px;
+    top: 57px;
+}
+
+#resultLipfree-female-2 > img {
+  width: 35px;
+}
+
+#resultLipfree-female-3 {
+        left: 160px;
+    top: 57px;
+}
+
+#resultLipfree-female-3 > img {
+  width: 50px;
+}
+
+#resultLipfree-female-4 {
+    left: 180px;
+    top: 89px;
+}
+
+#resultLipfree-female-4 > img {
+  width: 31px;
+}
+
+#resultLipfree-female-5 {
+    left: 190px;
+    top: 82px;
+}
+
+#resultLipfree-female-5 > img {
+  width: 35px;
+}
+
+#resultLipfree-female-6 {
+    left: 184px;
+    top: 30px;
+}
+
+#resultLipfree-female-6 > img {
+  width: 33px;
+}
+
+#resultLipfree-female-7 {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  left: 141px;
+  top: 83px;
+}
+
+#resultLipfree-female-7 > img {
+  width: 75px;
+}
+
+#resultLipfree-female-8 {
+  -webkit-transform: rotateY(-180deg) rotate(26deg);
+      transform: rotateY(-180deg) rotate(26deg);
+    left: 38px;
+    top: 119px;
+}
+
+#resultLipfree-female-8 > img {
+  width: 46px;
+}
+
+#resultLipfree-female-9 {
+  left: 189px;
+    top: 29px;
+}
+
+#resultLipfree-female-9 > img {
+  width: 20px;
+}
+
+#resultLipfree-female-10 {
+  -webkit-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+  left: 154px;
+    top: 50px;
+}
+
+#resultLipfree-female-10 > img {
+  width: 30px;
+}
+
+#resultLipfree-female-11 {
+  -webkit-transform: rotate(14deg);
+   transform: rotate(14deg);
+    left: 329px;
+    top: 56px;
+}
+
+#resultLipfree-female-11 > img {
+  width: 40px;
+}
+#resultLipfree-female-12 {
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+    left: 167px;
+    top: 9px;
+}
+
+#resultLipfree-female-12 > img {
+  width: 43px;
+}
+/* For Lisp */
+
+
+/* For Beards */
+.resultBreads {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+#resultBeardfree-male-1 {
+    left: 184px;
+    top: 28px;
+}
+#resultBeardfree-male-1 > img {
+    width: 56px;
+}
+
+#resultBeardfree-male-2 {
+    left: 221px;
+    top: 26px;
+}
+#resultBeardfree-male-2 > img {
+    width: 87px;
+}
+#resultBeardfree-male-3 {
+      left: 196px;
+    top: 60px;
+}
+#resultBeardfree-male-3 > img {
+    width: 53px;
+}
+#resultBeardfree-male-4 {
+        left: 157px;
+    top: 57px;
+    transform: rotate(-32deg);
+}
+#resultBeardfree-male-4 > img {
+    width: 117px;
+}
+#resultBeardfree-male-5 {
+    left: 143.5px;
+    top: 7px;
+}
+#resultBeardfree-male-5 > img {
+    width: 48.5px;
+}
+#resultBeardfree-male-6 {
+    left: 122px;
+    top: 24px;
+
+}
+#resultBeardfree-male-6 > img {
+    width: 44px;
+}
+#resultBeardfree-male-7 {
+    left: 202px;
+    top: 60px;
+    transform: rotate(6deg);
+
+}
+#resultBeardfree-male-7 > img {
+    width: 81px;
+}
+#resultBeardfree-male-8 {
+        left: 266px;
+    top: 23px;
+
+}
+#resultBeardfree-male-8 > img {
+    width: 76px;
+}
+#resultBeardfree-male-9 {
+    left: 162px;
+    top: 59px
+}
+#resultBeardfree-male-9 > img {
+    width: 50px;
+}
+#resultBeardfree-male-10 {
+    left: 254px;
+    top: 34px;
+    transform: rotate(17deg);
+}
+#resultBeardfree-male-10 > img {
+    width: 61px;
+}
+
+/* For Beards */
+
+
+/*.card-body{
+  width: 600px;
+  height: 400px;
+}*/
+
+
+
+/*@media only screen and (max-width: 600px) {
+  .resultSticker > img {
+    width: 380px;
+  }
+
+  .resultSkin > img {
+    width: 350px;
+  }
+}
+*/
+
+
+/* =================== Premium Version ==================== */
+/* ======================================================== */
+
+/* Male Pose*/
+#resultBasepremium-male-1 {
+        left: 103px;
+    top: 74px;
+}
+
+#resultBasepremium-male-1 > img {
+    width: 290px;
+}
+
+#resultBasepremium-male-2 {
+    left: -46px;
+    top: 25px;
+}
+
+#resultBasepremium-male-2 > img {
+    width: 430px;
+}
+
+#resultBasepremium-male-3 {
+    left: -98px;
+    top: 44px;
+}
+
+#resultBasepremium-male-3 > img {
+    width: 338px;
+}
+
+/* End  Male Pose*/
+
+
+/* Male Hair*/
+#resultHairpremium-male-1 {
+        left: 161px;
+    top: 65px;
+    -webkit-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+
+#resultHairpremium-male-1 > img {
+    width: 98px;
+}
+#resultHairpremium-male-2 {
+    left: 135px;
+    top: 15px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultHairpremium-male-2 > img {
+    width: 52px;
+}
+
+#resultHairpremium-male-3 {
+    left: 37px;
+    top: 32px;
+    transform: rotate(-3deg);
+}
+
+#resultHairpremium-male-3 > img {
+    width: 71px;
+}
+
+/* End  Male Hair*/
+
+
+/* Male Eye*/
+#resultEyespremium-male-1 {
+       left: 188px;
+    top: 122px;
+    -webkit-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+
+#resultEyespremium-male-1 > img {
+    width: 40px;
+}
+
+#resultEyespremium-male-2 {
+    left: 152px;
+    top: 42px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultEyespremium-male-2 > img {
+    width: 21px;
+}
+
+#resultEyespremium-male-3 {
+    left: 57px;
+    top: 73px;
+    transform: rotate(-3deg);
+}
+
+#resultEyespremium-male-3 > img {
+    width: 28px;
+}
+
+/* End  Male Pose*/
+
+/* Male Eye*/
+#resultBeardpremium-male-1 {
+        left: 177px;
+    top: 93px;
+    -webkit-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+
+#resultBeardpremium-male-1 > img {
+    width: 95px;
+}
+#resultBeardpremium-male-2 {
+        left: 136px;
+    top: 32px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultBeardpremium-male-2 > img {
+    width: 51px;
+}
+#resultBeardpremium-male-3 {
+    left: 40px;
+    top: 55px;
+    transform: rotate(-3deg);
+}
+
+#resultBeardpremium-male-3 > img {
+    width: 70px;
+}
+
+/* End  Male Pose*/
+
+
+
+/* FeMale Pose*/
+#resultBasepremium-female-1 {
+    left: 20px;
+    top: 53px;
+}
+
+#resultBasepremium-female-1 > img {
+    width: 365px;
+}
+
+#resultBasepremium-female-2 {
+    left: 36px;
+    top: 29px;
+}
+
+#resultBasepremium-female-2 > img {
+    width: 320px;
+}
+
+#resultBasepremium-female-3 {
+    left: 81px;
+    top: 12px;
+}
+
+#resultBasepremium-female-3 > img {
+    width: 269px;
+}
+#resultBasepremium-female-4 {
+    left: -33px;
+    top: 29px;
+    transform: rotateY(-180deg) rotate(0deg);
+    z-index: -1;
+}
+
+#resultBasepremium-female-4 > img {
+    width: 305px;
+}
+#resultBasepremium-female-5 {
+    left: 52px;
+    top: 8px;
+}
+
+#resultBasepremium-female-5 > img {
+    width: 365px;
+}
+#resultBasepremium-female-6 {
+    left: -6px;
+    top: 18px;
+}
+
+#resultBasepremium-female-6 > img {
+    width: 400px;
+}
+#resultBasepremium-female-7 {
+    left: -83px;
+    top: 10px;
+}
+
+#resultBasepremium-female-7 > img {
+    width: 375px;
+}
+#resultBasepremium-female-8 {
+    left: -6px;
+    top: 5px;
+}
+
+#resultBasepremium-female-8 > img {
+    width: 392px;
+}
+#resultBasepremium-female-9 {
+        left: 36px;
+    top: 50px;
+}
+
+#resultBasepremium-female-9 > img {
+    width: 304px;
+}
+#resultBasepremium-female-10 {
+    left: 39px;
+    top: 27px;
+}
+
+#resultBasepremium-female-10 > img {
+    width: 300px;
+}
+
+/* End  FeMale Pose*/
+
+
+/* FeMale Hair*/
+#resultHairpremium-female-1 {
+    left: 205px;
+    top: 25px;
+}
+
+#resultHairpremium-female-1 > img {
+    width: 90px;
+}
+#resultHairpremium-female-2 {
+    left: 149px;
+    top: 9px;
+}
+#resultHairpremium-female-2 > img {
+    width: 78px;
+}
+
+#resultHairpremium-female-3 {
+    left: 271px;
+    top: 44px;
+    transform: rotateY(-180deg) rotate(-93deg);
+}
+
+#resultHairpremium-female-3 > img {
+    width: 70px;
+}
+#resultHairpremium-female-4 {
+    left: 42px;
+    top: 9px;
+}
+
+#resultHairpremium-female-4 > img {
+    width: 73px;
+}
+#resultHairpremium-female-5 {
+    left: 155px;
+    top: -14px;
+}
+
+#resultHairpremium-female-5 > img {
+    width: 97px;
+}
+#resultHairpremium-female-6 {
+        left: 153px;
+    top: -12px;
+    transform: rotateY(-180deg) rotate(4deg);
+}
+
+#resultHairpremium-female-6 > img {
+    width: 82px;
+}
+
+#resultHairpremium-female-7 {
+        left: 78px;
+    top: -4px;
+}
+
+#resultHairpremium-female-7 > img {
+    width: 60px;
+}
+#resultHairpremium-female-8 {
+    left: 218px;
+    top: -11px;
+    transform: rotateY(-180deg) rotate(-51deg);
+}
+
+#resultHairpremium-female-8 > img {
+    width: 74px;
+}
+
+#resultHairpremium-female-9 {
+    left: 142px;
+    top: 67px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultHairpremium-female-9 > img {
+    width: 68px;
+}
+
+#resultHairpremium-female-10 {
+    left: 140px;
+    top: 12px;
+    transform: rotateY(-180deg) rotate(-4deg);
+}
+
+#resultHairpremium-female-10 > img {
+    width: 64px;
+}
+
+/* End  FeMale Hair*/
+
+
+/* Female Lips */
+#resultLippremium-female-1 {
+    left: 214px;
+    top: 89px;
+}
+#resultLippremium-female-1 img {
+  width: 50px;
+}
+#resultLippremium-female-2 {
+    left: 157px;
+    top: 63px;
+}
+#resultLippremium-female-2 img {
+  width: 43px;
+}
+
+#resultLippremium-female-3 {
+    left: 273px;
+    top: 87px;
+    transform: rotateY(-180deg) rotate(-93deg);
+}
+
+#resultLippremium-female-3 > img {
+    width: 38px;
+}
+#resultLippremium-female-4 {
+    left: 50px;
+    top: 62px;
+}
+
+#resultLippremium-female-4 > img {
+    width: 38px;
+}
+#resultLippremium-female-5 {
+    left: 164px;
+    top: 55px;
+}
+
+#resultLippremium-female-5 > img {
+    width: 60px;
+}
+
+#resultLippremium-female-6 {
+    left: 181px;
+    top: 47px;
+    transform: rotateY(-180deg) rotate(1deg);
+}
+
+#resultLippremium-female-6 > img {
+    width: 46px;
+}
+
+#resultLippremium-female-7 {
+    left: 84px;
+    top: 39px;
+}
+
+#resultLippremium-female-7 > img {
+    width: 35px;
+}
+
+#resultLippremium-female-8 {
+    left: 227px;
+    top: 48px;
+    transform: rotateY(-180deg) rotate(-44deg);
+}
+
+#resultLippremium-female-8 > img {
+    width: 40px;
+}
+
+#resultLippremium-female-9 {
+    left: 163px;
+    top: 113px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultLippremium-female-9 > img {
+    width: 44px;
+}
+#resultLippremium-female-10 {
+    left: 160px;
+    top: 61px;
+}
+
+#resultLippremium-female-10 > img {
+    width: 34px;
+}
+
+/* End Female Lips */
+
+
+/* Female Eyes */
+#resultEyespremium-female-1 {
+    left: 217px;
+    top: 58px;
+}
+
+#resultEyespremium-female-1 img {
+  width: 45px;
+}
+
+#resultEyespremium-female-2 {
+    left: 159px;
+    top: 30px;
+}
+
+#resultEyespremium-female-2 img {
+  width: 42px;
+}
+
+#resultEyespremium-female-3 {
+    left: 293px;
+    top: 76px;
+    transform: rotateY(-180deg) rotate(-93deg);
+}
+#resultEyespremium-female-3 > img {
+    width: 38px;
+}
+#resultEyespremium-female-4 {
+        left: 50px;
+    top: 34px;
+}
+#resultEyespremium-female-4 > img {
+    width: 38px;
+}
+#resultEyespremium-female-5 {
+    left: 168px;
+    top: 19px;
+}
+#resultEyespremium-female-5 > img {
+    width: 53px;
+}
+#resultEyespremium-female-6 {
+    left: 182px;
+    top: 15px;
+    transform: rotateY(-180deg) rotate(1deg);
+}
+
+#resultEyespremium-female-6 > img {
+    width: 43px;
+}
+#resultEyespremium-female-7 {
+    left: 86px;
+    top: 13px;
+}
+
+#resultEyespremium-female-7 > img {
+    width: 36px;
+}
+#resultEyespremium-female-8 {
+    left: 242px;
+    top: 22px;
+    transform: rotateY(-180deg) rotate(-44deg);
+}
+
+#resultEyespremium-female-8 > img {
+    width: 39px;
+}
+
+#resultEyespremium-female-9 {
+    left: 167px;
+    top: 89px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultEyespremium-female-9 > img {
+    width: 34px;
+}
+
+#resultEyespremium-female-10 {
+    left: 163px;
+    top: 34px;
+}
+
+#resultEyespremium-female-10 > img {
+    width: 34px;
+}
+/* End Female Eyes */
+
+
+
+/* Start Saved Smoji */
+.savedSkin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.savedSkin > img {
+      width: 108px;
+}
+
+.savedEyes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.savedHair > img {
+    width: 120px;
+}
+.savedHair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+.savedHair > img {
+    width: 120px;
+}
+
+.savedBreads {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.savedBreads > img {
+    width: 120px;
+}
+
+.savedLip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.savedLip > img {
+    width: 108px;
+}
+/* End Saved Smoji */
+
+
+
+/* Create a custom radio button */
+.container_radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container_radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+#paymentFrm .form-control{
+    border: 1px solid #ced4da !important;
+    border-radius: 5px;
+}
+
+.blur{
+  filter: blur(6px);
+}

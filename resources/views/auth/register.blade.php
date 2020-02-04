@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="page-content h-100">
+    test
     <div class="background theme-header"><img src="img/city2.jpg" alt=""></div>
     <div class="row mx-0 h-100 justify-content-center">
         <div class="col-10 col-md-6 col-lg-4 my-3 mx-auto text-center align-self-center">

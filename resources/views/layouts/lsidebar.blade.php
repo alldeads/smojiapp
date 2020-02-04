@@ -2,10 +2,10 @@
     <div class="profile-link">
         <a href="#" class="media">
             <div class="w-auto h-100">
-                <figure class="avatar avatar-40"><img src="{{ asset('images/user1.png') }}" alt=""> </figure>
+                <figure class="avatar avatar-40"><img src="{{ asset('images/logo.png') }}" alt=""> </figure>
             </div>
-            <div class="media-body">
-                <h5 class=" mb-0">{{ auth()->user()->name }} <span class="status-online bg-success"></span></h5>
+            <div class="media-body mt-2">
+                <h5 class="  mb-0 text-white">{{ auth()->user()->name }} <span class="status-online bg-success"></span></h5>
             </div>
         </a>
     </div>
@@ -20,9 +20,9 @@
             </li>
 
             <li class="nav-item">
-                <a href="/" class="sidebar-close">
+                <a href="/savedsmoji" class="sidebar-close">
                     <div class="item-title">
-                        <i class="material-icons">poll</i> Saved Smojis
+                        <i class="material-icons">poll</i> Change Smoji
                     </div>
                 </a>
             </li>
@@ -34,9 +34,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="sidebar-close">
+                <a href="javascript:void()" class="sidebar-close">
                     <div class="item-title">
-                        <i class="material-icons">infornation</i> Go Premium
+                        <i class="material-icons">infornation</i> Get Raunchy!
                     </div>
                 </a>
             </li>

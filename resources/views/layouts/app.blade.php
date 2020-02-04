@@ -78,7 +78,8 @@
         <script src="{{ asset('js/main.js') }}"></script>
 
         <script src="{{ asset('js/fabric.js') }}"></script>
-        <script src="{{ asset('js/html2canvas.min.js') }}"></script>
+        <script src="{{ asset('js/html2canvas.js') }}" defer></script>
+        <!-- <script src="{{ asset('js/html2canvas.min.js') }}"></script> -->
         
         @yield('js')
     </body>

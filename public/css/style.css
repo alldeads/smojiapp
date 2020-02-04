@@ -352,7 +352,8 @@ p {
     width: 100%;
     display: block;
     border-top: 0;
-    padding: 0 15px
+    padding: 0 15px;
+        margin: 5px 0;
 }
 .navbar .navbar-nav li .dropdown-menu {
     width: 100%;
@@ -2007,7 +2008,8 @@ body .wrapper .page .footer {
     padding: 15px;
 }
 .profile-link .media {
-    background: #ffffff;
+    border: 1px solid #fff;
+    background: #e0dbdb17;
     border-radius: 8px;
     padding: 10px;
     /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
