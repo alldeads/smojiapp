@@ -11682,8 +11682,8 @@ a.text-dark:focus {
 }
 
 #resultBasefree-male-11 {
-  left: 9%;
-  top: 18%;
+  left: -15%;
+  top: 1%;
 }
 
 #resultBasefree-male-11 > img {
@@ -12076,14 +12076,12 @@ a.text-dark:focus {
 }
 
 #resultHairfree-male-11 {
-  -webkit-transform: rotate(12deg);
-          transform: rotate(12deg);
-  left: 204px;
-  top: 59px;
+  left: 134px;
+  top: -4px;
 }
 
 #resultHairfree-male-11 > img {
-  width: 63px;
+  width: 38px;
 }
 
 #resultHairfree-male-12 {
@@ -12261,6 +12259,15 @@ a.text-dark:focus {
 
 #resultEyesfree-male-10 > img {
     width: 26px;
+}
+
+#resultEyesfree-male-11 {
+    left: 143px;
+    top: 13px;
+}
+
+#resultEyesfree-male-11 > img {
+    width: 18px;
 }
 
 /* For eye */
@@ -12469,6 +12476,14 @@ a.text-dark:focus {
 }
 #resultBeardfree-male-10 > img {
     width: 61px;
+}
+
+#resultBeardfree-male-11 {
+    left: 134px;
+    top: 8px;
+}
+#resultBeardfree-male-11 > img {
+    width: 38px;
 }
 
 /* For Beards */
