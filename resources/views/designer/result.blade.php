@@ -1,8 +1,180 @@
 @extends('layouts.app')
 
 @section('page-content')
+ <script src="https://retifrav.github.io/html2canvas-example/html2canvas.min.js"></script>
+
+  
+
+    <style type="text/css">
+            .box-width {
+                  -webkit-box-flex: 0;
+                  flex: 0 0 21.5%;
+                  max-width: 21.5%;
+                  position: relative;
+                  width: 100%;
+                  padding-right: 15px;
+                  padding-left: 15px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .box-width {
+                  -webkit-box-flex: 0;
+                  flex: 0 0 100%;
+                  max-width: 100%;
+                  position: relative;
+                  width: 100%;
+                  padding-right: 15px;
+                  padding-left: 15px;
+                }
+            }
+
+            .shareonmobile {
+                  position: absolute;
+                  background: #00000033;
+                  color: #fff;
+                  border-radius: 50%;
+                  width: 30px;
+                  padding: 3px 0px 0px 3px;
+                  height: 30px;
+                  top: 5px;
+                  right: 5px;
+                  z-index: 2;
+            }
+
+            .shareondesktop {
+                position: absolute;
+                background: #00000040;
+                color: #fff;
+                border-radius: 50%;
+                width: 35px;
+                padding: 5px 1px 0px 5px;
+                height: 35px;
+                right: 7px;
+                bottom: 11px;
+                z-index: 10;
+            }
+
+            /* Ipad Pro*/
+            @media only screen 
+              and (min-width: 1024px) 
+              and (max-height: 1366px) 
+              and (-webkit-min-device-pixel-ratio: 1.5) {
+
+                .shareonmobile {
+                   position: absolute;
+                  background: #00000033;
+                  color: #fff;
+                  border-radius: 50%;
+                  width: 30px;
+                  padding: 3px 0px 0px 3px;
+                  height: 30px;
+                  top: 5px;
+                  right: 5px;
+                  z-index: 2;
+              }
 
 
+              .box-width {
+                  -webkit-box-flex: 0;
+                  flex: 2 0 33%;
+                  max-width: 33%;
+                  position: relative;
+                  width: 100%;
+                  padding-right: 15px;
+                  padding-left: 15px;
+              }
+
+
+            }
+            /* Ipad */
+            @media only screen 
+              and (min-width: 768px) 
+              and (max-height: 1024px) 
+              and (-webkit-min-device-pixel-ratio: 1.5) {
+
+                .shareonmobile {
+                  position: absolute;
+                  background: #00000033;
+                  color: #fff;
+                  border-radius: 50%;
+                  width: 30px;
+                  padding: 3px 0px 0px 3px;
+                  height: 30px;
+                  top: 5px;
+                  right: 5px;
+                  z-index: 2;
+              }
+              .box-width {
+                  -webkit-box-flex: 0;
+                  flex: 2 0 50%;
+                  max-width: 50%;
+                  position: relative;
+                  width: 100%;
+                  padding-right: 15px;
+                  padding-left: 15px;
+              }
+
+            }
+
+
+            .loadernew {
+                border: 10px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 10px solid #4e54c8;
+                width: 80px;
+                height: 80px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+                background: #ffffff;
+                left: 50%;
+                top: 45%;
+                position: absolute;
+                transform: translate(50%, 50%);
+                z-index: 999;
+            }
+            #loaderback{
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 9999;
+                display: flex;
+                    top: 0;
+
+            }
+            #backdropmodal{
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 9999;
+                display: flex;
+                    top: 0;
+
+            }
+
+            /* Safari */
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+
+            .smojilogostriker
+            {    
+              z-index: 10;
+              position: absolute;
+              width: 160px;bottom: -52px;left: 0;
+            }
+            .resultFinal{
+              cursor: pointer;
+            }
+
+    </style>
     @if(count($errors))
       <div class="alert alert-danger">
           <strong>Whoops!</strong> There were some problems with your input.
@@ -59,6 +231,7 @@
                 </div>                   
             </div>                
             <input type="hidden" name="stripeToken" value="" />
+            <input type="hidden" name="packagetype" value="" />
             <hr>                            
             <p><small class="text-danger" style="display:none;">There were errors while submitting</small></p>
             <p><input id="submit-btn" type="submit" class="btn btn-success btn-lg pull-left" value="Proceed to Payment">&nbsp;&nbsp;&nbsp;&nbsp;
@@ -68,7 +241,15 @@
       </form>
     </div>
 
+    <div id="loaderback" class="d-none">
+      <div class="loadernew" id="myloader"></div>
+    </div>
+
     <div class="container-fluid">
+
+        
+        <!--Start : Free -->
+        
         <div class="row justify-content-center" id="">
             @php
               $subscription = 'free';
@@ -76,10 +257,11 @@
             @for( $i = 1; $i <= ${$gender}['counts'][$subscription]; $i++ )           
             @php
               $ibox = 'mystrikerBox'.$subscription.'-'.$gender . '-' . $i;
+              $main_ibox = 'main_'.$subscription.'-'.$gender . '-' . $i;
             @endphp
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4" >
+                <div class="box-width mb-4" onclick="screenshot('{{$main_ibox}}','{{$ibox}}','currentpage')">
 
-                    <div class="card resultContainer">
+                    <div class="card resultContainer" id="{{$main_ibox}}">
 
                         <div class="card-body" id="{{$ibox}}" >
 
@@ -112,40 +294,29 @@
                                       <img src="{{ asset("images/eyes/" . $gender . "/" . $eye_result . ".png") }}">
                                   </div>
                                 
-
-                                @if ( $gender == "male" )
+                                @if ( $gender == "male" && $beard_result != "1")
+                                    
                                     <div id="resultBeard{{$subscription.'-'.$gender . '-' . $i}}" class="resultBreads">
                                         <img src="{{ asset("images/beards/thumbnail/" . $beard_result . ".png") }}">
                                     </div>
+                                    
                                 @endif
+                                <img src="{{ asset('images/new_logo.png') }}" alt="" class="smojilogostriker">
 
                             </div>
 
-                            <!-- <span class="mygenDownBtn">Download</span> -->
+                            <div class="shareondesktop d-none" onclick="screenshot('{{$ibox}}','currentpage')" style="cursor: pointer;"><i class="material-icons" style="font-size: 25px;">visibility</i></div>
                         </div>
                     </div>
 
-                    <center>                         
-                      <div class="" style="clear: both;margin: 5px auto;display: none;">
-                        <div onclick="screenshot('{{$ibox}}','download')" style="float: left;" class="col-md-5  pull-left btn btn-primary mygeneratedButton" id="{{$ibox}}">Download</div>
-                        <div onclick="screenshot('{{$ibox}}','share')" class="col-md-5 btn btn-primary  shareonfacebook" id="{{$ibox}}" 
-                        style="background-color: #4267b2;float: right;background-image: none;">Share on Facebook</div>
-                      </div>
-                      <!-- <a target="_blank" OnClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" 
-                      href="https://www.facebook.com/sharer/sharer.php?u=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&picture=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&title=titlehere&description=Yourdescription">
-                        shareon facebook
-                      </a> -->
-
-
-                        <!-- AddToAny END -->
-                        
-
-                        <!-- <div id="previ_{{$ibox}}"></div> -->
-                    </center>
                 </div>
             @endfor
 
         </div>
+        <!-- ENd : Free -->
+
+
+        <!--Start :  Premium -->
         <div class="row justify-content-center" id="">
             @php
               $subscription = 'premium';
@@ -153,10 +324,11 @@
             @for( $i = 1; $i <= ${$gender}['counts'][$subscription]; $i++ )           
             @php
               $ibox = 'mystrikerBox'.$subscription.'-'.$gender . '-' . $i;
+              $main_ibox = 'main_'.$subscription.'-'.$gender . '-' . $i;
             @endphp
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-4" >
+                <div class="box-width mb-4" onclick="screenshotPrem('{{$main_ibox}}','{{$ibox}}','currentpage')">
 
-                    <div class="card resultContainer">
+                    <div class="card resultContainer" id="{{$main_ibox}}">
 
                         <div class="card-body {{$is_premium}}" id="{{$ibox}}" >
 
@@ -190,61 +362,122 @@
                                   </div>
                                 
 
-                                @if ( $gender == "male" )
+                                @if ( $gender == "male" && $beard_result != "1")
                                     <div id="resultBeard{{$subscription.'-'.$gender . '-' . $i}}" class="resultBreads">
                                         <img src="{{ asset("images/beards/thumbnail/" . $beard_result . ".png") }}">
                                     </div>
                                 @endif
-
+                                <img src="{{ asset('images/new_logo.png') }}" alt="" class="smojilogostriker">
                             </div>
-
-                            <!-- <span class="mygenDownBtn">Download</span> -->
+                            <div class="shareondesktop d-none" onclick="screenshot('{{$ibox}}','currentpage')" style="cursor: pointer;"><i class="material-icons" style="font-size: 25px;">visibility</i></div>
                         </div>
                     </div>
-
                     <center>        
                       @if ( $is_premium == "blur" )
-                            <div class="col-md-12  btn btn-primary  submit-btn" >Go Premium</div>
+                            <!-- <div class="col-md-12  btn btn-primary  submit-btn" > Get Raunchy! </div> -->
+                            <div class="col-md-12  btn btn-primary" > <a href="/premium" class="text-white">Get Raunchy!</a> </div>
                       @endif
-                                       
-                      
-                      <div class="" style="clear: both;margin: 5px auto;display: none;">
-                        <div onclick="screenshot('{{$ibox}}','download')" style="float: left;" class="col-md-5  pull-left btn btn-primary mygeneratedButton" id="{{$ibox}}">Download</div>
-                        <div onclick="screenshot('{{$ibox}}','share')" class="col-md-5 btn btn-primary  shareonfacebook" id="{{$ibox}}" 
-                        style="background-color: #4267b2;float: right;background-image: none;">Share on Facebook</div>
-                      </div>
-                      <!-- <a target="_blank" OnClick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=250'); return false;" 
-                      href="https://www.facebook.com/sharer/sharer.php?u=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&picture=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&title=titlehere&description=Yourdescription">
-                        shareon facebook
-                      </a> -->
-
-
-                        <!-- AddToAny END -->
-                        
-
-                        <!-- <div id="previ_{{$ibox}}"></div> -->
                     </center>
+
                 </div>
             @endfor
 
         </div>
+        <!--End :  Premium -->
+        
+  
+        <!--Start :  Valentine -->
+        <div class="row justify-content-center" id="">
+            @php
+              $subscription = 'valentine';
+            @endphp
+            @for( $i = 1; $i <= ${$gender}['counts'][$subscription]; $i++ )           
+            @php
+              $ibox = 'mystrikerBox'.$subscription.'-'.$gender . '-' . $i;
+              $main_ibox = 'main_'.$subscription.'-'.$gender . '-' . $i;
+            @endphp
+                <div class="box-width mb-4" onclick="screenshotValentine('{{$main_ibox}}','{{$ibox}}','currentpage')">
+
+                    <div class="card resultContainer" id="{{$main_ibox}}">
+
+                        <div class="card-body {{$is_valentine}}" id="{{$ibox}}" >
+
+                            <div class="resultFinal" >
+
+                                <div id="resultSticker{{$subscription.'-'.$gender . '-' . $i}}" class="resultSticker">
+                                    <img src="{{ asset('images/results/'.$subscription.'/stickers/'.$gender.'/'.$i.'.png') }}" class="share-imag">
+                                </div>
+                                
+
+                                <div id="resultBase{{$subscription.'-'.$gender . '-' . $i}}" class="resultSkin">
+                                    <img src="{{ asset('images/results/'.$subscription.'/pose/'.$gender.'/pose-'.$i.'/'.$skin_result.'-01.png') }}">
+                                </div>
+
+                                <div id="resultHair{{$subscription.'-'.$gender . '-' . $i}}" class="resultHair">
+                                    <img src="{{ asset('images/results/hair/'.$gender.'/'.$hair_result.'.png') }}">
+                                </div>
+
+                                @if ( $gender == "female" )
+                                    <div id="resultLip{{$subscription.'-'.$gender . '-' . $i}}" class="resultLip">
+                                        <img src="{{ asset("images/lip/" . $gender . "/" . $lip_result . ".png") }}">
+                                    </div>
+                                @endif
+                                
+                                  <div id="resultEyes{{$subscription.'-'.$gender . '-' . $i}}" class="resultEyes">
+                                      <img src="{{ asset("images/eyes/" . $gender . "/" . $eye_result . ".png") }}">
+                                  </div>
+                                
+
+                                @if ( $gender == "male" && $beard_result != "1")
+                                    <div id="resultBeard{{$subscription.'-'.$gender . '-' . $i}}" class="resultBreads">
+                                        <img src="{{ asset("images/beards/thumbnail/" . $beard_result . ".png") }}">
+                                    </div>
+                                @endif
+                                <img src="{{ asset('images/new_logo.png') }}" alt="" class="smojilogostriker">
+                            </div>
+                            <div class="shareondesktop d-none" onclick="screenshot('{{$ibox}}','currentpage')" style="cursor: pointer;"><i class="material-icons" style="font-size: 25px;">visibility</i></div>
+                        </div>
+                    </div>
+                    <center>        
+                      @if ( $is_valentine == "blur" )
+                            <div class="col-md-12  btn btn-primary  submit-btn-valentine" > Valentines Day Package </div>
+                      @endif
+                    </center>
+
+                </div>
+            @endfor
+
+        </div>
+        <!-- End  :  Valentine -->
+
 
     </div>
 
-    <div class="modal" id="favoritesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-             
-              <div class="modal-body">
-                    <span id="bodyhtml"></span>
-                    <span id="btnlink"></span>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>            
+
+
+    <div  id="backdropmodal" class="d-none">
+      <div class="modal" id="favoritesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+               
+                <div class="modal-body">
+                      <span id="bodyhtml"></span>
+                      <span id="btnlink"></span>
+                </div>
+                <div class="" style="border-top: 1px solid #ddd;color: #000;">        
+                  <div style="float: left;text-align: left;padding: 7px 0 0 20px;">Long Press Image to Share!</div>
+                  <button type="button" class="btn btn-default float-right" data-dismiss="modal">Close</button>            
+                </div>
+
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>            
+                </div> -->
               </div>
             </div>
-          </div>
+      </div>
     </div>
+
+
 
 @endsection
 
@@ -252,17 +485,60 @@
     
 @section('js')
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+  
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type='text/javascript'>
 
-        function screenshot(iddiv,type){
+        
+        //when modal opens
+        $('#favoritesModal').on('shown.bs.modal', function (e) {
+          /*$(".page").css({ opacity: 0.5 });*/
+          $("#backdropmodal").removeClass('d-none');
+        })
+
+        //when modal closes
+        $('#favoritesModal').on('hidden.bs.modal', function (e) {
+          /*$(".page").css({ opacity: 1 });*/
+          $("#backdropmodal").addClass('d-none');
+        })
+
+
+        var ua = navigator.userAgent.toLowerCase();
+        var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+        if(isAndroid) {}
+        var iswindows = ua.indexOf("windows") > -1; //&& ua.indexOf("mobile");
+        /*if(iswindows) {
+            $('.share-button').addClass('d-none');
+            $('.shareondesktop').removeClass('d-none');
+        }else{
+          $('.share-button').removeClass('d-none');
+          $('.shareondesktop').addClass('d-none');
+        }*/
+
+          
+  
+
+        function screenshot(mainId,iddiv,type){
+          $("#loaderback").removeClass('d-none');
           var downId = iddiv+'_download';
             console.log('clicked ' + iddiv);
             console.log('clicked ' + iddiv);
            //var boxSave = document.getElementById('boxSave');
            var boxSave = 'mystrikerBoxfree-male-1';
-           html2canvas( document.getElementById(iddiv) ).then(function(canvas) {
+           $('#'+iddiv).find('.shareondesktop').addClass('d-none');
+           html2canvas( document.getElementById(iddiv), {scale: 2} ).then(function(canvas) {
+
+              canvas.id = iddiv;
+              var main = document.getElementById(mainId);
+              while (main.firstChild) { main.removeChild(main.firstChild); }
+              main.appendChild(canvas);
+              //this.href = document.getElementById("canvasID").toDataURL();
+              //this.download = "canvas-image.png";
+              //console.log('this.download');
+              //console.log(this.download);
+
              /*var idprev = 'previ_'+iddiv;
              document.getElementById(idprev).appendChild(canvas);*/
 
@@ -272,7 +548,7 @@
              //document.body.appendChild(canvas);
 
              // Get base64URL
-             var base64URL = canvas.toDataURL('image/jpeg').replace('image/jpeg', 'image/octet-stream');
+                  var base64URL = document.getElementById(iddiv).toDataURL();
 
               
                    $.ajaxSetup({
@@ -289,44 +565,11 @@
                         image: base64URL
                       },
                       success: function(result){
-                         console.log(result);
-                         
+                        console.log(result);     
+                        $('#'+iddiv).find('.shareondesktop').removeClass('d-none');
+                        $("#loaderback").addClass('d-none');                    
+                        showimageonModal(result);
 
-                         
-                         //var btnDwnLnk = '<a  class="btn btn-primary btn-lg" id="'+downId+'" href="{{ url("/smoji/download") }}/'+result+'">Download</a>';
-                         //$("#"+iddiv).find('.mygenDownBtn').html(btnDwnLnk);
-                         //$("#"+iddiv).find('.mygenDownBtn').css('display','none');
-                        if(type == 'download'){
-
-                          var htmldata = '<img  style="width: 100%;" src="{{ asset("uploads") }}/'+result+' ">';  
-                          var htmldata = '<img  style="width: 100%;" src="{{ asset("uploads") }}/'+result+' ">';  
-                          $("#"+iddiv).find('.resultFinal').html(htmldata);
-
-                          setTimeout(function() { 
-                            window.location.href = '{{ url("/smoji/download") }}/'+result+'';
-                          }, 1000 );
-
-                        }
-                        if(type == 'share'){
-                            
-                          imagelink = '{{ asset("uploads") }}/'+result;
-                          console.log(imagelink);
-                          var url = imagelink;
-                          var title = 'title';
-                          var descr = imagelink;
-                          var image = imagelink;
-                          var winWidth = '600';
-                          var winHeight = '250';
-                          
-                          //https://www.facebook.com/sharer/sharer.php?u=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&picture=https://run.smojiapp.com/images/templates/male/skins/thumbnail/2.png&title=titlehere&description=Yourdescription
-
-                              var winTop = (screen.height / 2) - (winHeight / 2);
-                              var winLeft = (screen.width / 2) - (winWidth / 2);
-                              window.open('http://www.facebook.com/sharer.php?u=' + url + '&picture=' + image + '&title=' + title + '&description=' + descr, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
-                          
-
-                        }
-                         //showimageonModal(result);
                       }
                    });
                    
@@ -336,7 +579,7 @@
            });
         }
 
-        $(function() {
+        /*$(function() {
             $('#favoritesModal').on("show.bs.modal", function (e) {
                 
                  //var imageName = $(e.relatedTarget).data('title');
@@ -346,20 +589,20 @@
                  //$("#favoritesModalLabel").html($(e.relatedTarget).data('title'));
                  //$("#fav-title").html($(e.relatedTarget).data('title'));
                  $("#bodyhtml").html(htmldata);
-                 $("#btnlink").html(btnlink);
+                 //$("#btnlink").html(btnlink);
             });
-        });
+        });*/
 
         function showimageonModal(imageName){
 
-                 console.log('image Nmae' + imageName);
+                 console.log('image Name = ' + imageName);
                  $('#favoritesModal').modal('show');
                  //var imageName = $(e.relatedTarget).data('title');
                  //var imageName = 'screenshot_5e22ac358f0d4.png';
                  var htmldata = '<img style="width: 100%;" src="{{ asset("uploads") }}/'+imageName+' ">';                 
                  var btnlink = '<a  class="btn btn-primary btn-lg"  href="{{ url("/smoji/download") }}/'+imageName+'">Download</a>';
                  $("#bodyhtml").html(htmldata);
-                 $("#btnlink").html(btnlink);
+                 //$("#btnlink").html(btnlink);
             
         } 
 
@@ -389,21 +632,14 @@
 
         }
     </script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+    
+    
     <script type="text/javascript" src="https://malsup.github.io/jquery.form.js"></script>
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
     
-    <script src="https://checkout.stripe.com/checkout.js">           
-    </script>
-    
-    <!-- It is better to have the below script as separate file.-->
+    <script src="https://checkout.stripe.com/checkout.js"></script>
     <script type="text/javascript">
-        // Setting the error class and error element for form validation.
-       /* jQuery.validator.setDefaults({
-            errorClass: "text-danger",
-            errorElement: "small"
-        });*/
+
         
         function showProcessing() {
             $('.subscribe-process').show();
@@ -464,7 +700,8 @@
             // configuring Stripe publishable key and setting the options in Stripe Js.
             var handler = StripeCheckout.configure({
                 //Replace it with your stripe publishable key
-                key: '{{env("STRIPE_PUBLISHABLE_KEY")}}',
+                //key: '{{env("STRIPE_PUBLISHABLE_KEY")}}',
+                key: '{{ $stripe_publishable_key }}',
                 image: "{{ asset('images/favicon.png') }}",
                 allowRememberMe: false,
                 token: handleStripeToken
@@ -474,11 +711,24 @@
             
             // Calling Stripe Js to display pop up on button click event
             $(".submit-btn").on('click', function(e) {
-                
+                $("input[name='packagetype']").val('premium');
+                $('#subscribe-form').attr('action','/smoji/payment');
                 handler.open({
                        name: 'Smoji Premium',
-                       description: 'plan for premium $1.00' ,
-                       amount: 100 ,
+                       description: 'plan for premium $2.99' ,
+                       amount: 299 ,
+                       email: '{{$user_email}}' ,
+                });
+                return false;
+            });
+
+            $(".submit-btn-valentine").on('click', function(e) {
+                $("input[name='packagetype']").val('valentine');
+                $('#subscribe-form').attr('action','/smoji/paymentValentine');
+                handler.open({
+                       name: 'Valentines Day Package',
+                       description: 'plan for Valentines Day  $5.00' ,
+                       amount: 500 ,
                        email: '{{$user_email}}' ,
                 });
                 return false;
@@ -488,5 +738,128 @@
         });
     </script>
 
+    @if ( $is_premium != "blur" )
+    <script type='text/javascript'>
+        function screenshotPrem(mainId,iddiv,type){
+          $("#loaderback").removeClass('d-none');
+          var downId = iddiv+'_download';
+            console.log('clicked ' + iddiv);
+            console.log('clicked ' + iddiv);
+           //var boxSave = document.getElementById('boxSave');
+           var boxSave = 'mystrikerBoxfree-male-1';
+           $('#'+iddiv).find('.shareondesktop').addClass('d-none');
+           html2canvas( document.getElementById(iddiv), {scale: 2} ).then(function(canvas) {
+
+              canvas.id = iddiv;
+              var main = document.getElementById(mainId);
+              while (main.firstChild) { main.removeChild(main.firstChild); }
+              main.appendChild(canvas);
+              //this.href = document.getElementById("canvasID").toDataURL();
+              //this.download = "canvas-image.png";
+              //console.log('this.download');
+              //console.log(this.download);
+
+             /*var idprev = 'previ_'+iddiv;
+             document.getElementById(idprev).appendChild(canvas);*/
+
+             //var boxPrev = document.getElementById('previ_mystrikerBoxfree-male-1');
+
+             //document.body.appendChild(canvas);
+             //document.body.appendChild(canvas);
+
+             // Get base64URL
+                  var base64URL = document.getElementById(iddiv).toDataURL();
+
+              
+                   $.ajaxSetup({
+                      headers: {
+                          'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                      }
+                   });
+                   jQuery.ajax({
+                      url: "{{ url('/smoji/saveimg') }}",
+                      method: 'post',
+                      type:'json',
+                      data: {
+                        "_token": "{{ csrf_token() }}",
+                        image: base64URL
+                      },
+                      success: function(result){
+                        console.log(result);     
+                        $('#'+iddiv).find('.shareondesktop').removeClass('d-none');
+                        $("#loaderback").addClass('d-none');                    
+                        showimageonModal(result);
+
+                      }
+                   });
+                   
+
+
+
+           });
+        }
+    </script>
+    @else
+    <script type='text/javascript'>
+        function screenshotPrem(mainId,iddiv,type){
+           alert('Purchase plan');
+        }
+    </script>
+    @endif
+    @if ( $is_valentine != "blur" )
+    <script type='text/javascript'>
+        function screenshotValentine(mainId,iddiv,type){
+          $("#loaderback").removeClass('d-none');
+          var downId = iddiv+'_download';
+            console.log('clicked ' + iddiv);
+            console.log('clicked ' + iddiv);
+           //var boxSave = document.getElementById('boxSave');
+           var boxSave = 'mystrikerBoxfree-male-1';
+           $('#'+iddiv).find('.shareondesktop').addClass('d-none');
+           html2canvas( document.getElementById(iddiv), {scale: 2} ).then(function(canvas) {
+
+              canvas.id = iddiv;
+              var main = document.getElementById(mainId);
+              while (main.firstChild) { main.removeChild(main.firstChild); }
+              main.appendChild(canvas);
+              
+                  var base64URL = document.getElementById(iddiv).toDataURL();
+
+              
+                   $.ajaxSetup({
+                      headers: {
+                          'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                      }
+                   });
+                   jQuery.ajax({
+                      url: "{{ url('/smoji/saveimg') }}",
+                      method: 'post',
+                      type:'json',
+                      data: {
+                        "_token": "{{ csrf_token() }}",
+                        image: base64URL
+                      },
+                      success: function(result){
+                        console.log(result);     
+                        $('#'+iddiv).find('.shareondesktop').removeClass('d-none');
+                        $("#loaderback").addClass('d-none');                    
+                        showimageonModal(result);
+
+                      }
+                   });
+                   
+
+
+
+           });
+        }
+    </script>
+    @else
+    <script type='text/javascript'>
+        function screenshotValentine(mainId,iddiv,type){
+           alert('Purchase plan');
+        }
+    </script>
+    @endif
 @endsection
  

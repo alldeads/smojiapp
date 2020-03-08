@@ -16,16 +16,42 @@ Route::post('/create-smoji', 'SmojiController@index');
 
 Route::get('/', 'SmojiController@index');
 Route::get('/savedsmoji', 'SavedSmojiController@index');
+Route::get('/changesomji', 'SmojiController@changesomji');
 
 Route::get('/designer/{gender}', 'SmojiController@create');
 Route::post('/smoji/results', 'SmojiController@result');
 Route::get('/smoji/savedresults/{datasaved}', 'SmojiController@resultFromSaved');
 Route::post('/smoji/saveimg', 'SmojiController@saveimg');
 Route::get('/smoji/download/{filename}', 'SmojiController@download');
+Route::get('/smoji/detail/{imagename}', 'SmojiController@detailpage');
 
 Route::post('/smoji/payment', 'PaymentController@stripepayment');
+Route::post('/smoji/paymentValentine', 'PaymentController@stripepayment_valentine');
 Route::get('/smoji/thanks', 'PaymentController@thankyou');
+
+Route::get('/profile','HomeController@profile')->name('changePassword');
+Route::post('/profile/save','HomeController@profilesave')->name('profilesave');
+Route::post('/changePassword','HomeController@changePassword')->name('changePassword');
+
+Route::get('/premium','PremiumController@index')->name('premium');
+Route::get('/cancel','PaymentController@stripecancel')->name('premium');
 
 Auth::routes();
 
 Route::get('/home', 'SmojiController@index')->name('home');
+
+
+
+/*Route::get('admin', function () {
+    return view('admin.master');
+});*/
+
+Route::prefix('admin')->group(function() {
+    Route::get('/', 'Auth\AdminLoginController@showLoginForm');
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login');
+    Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+    Route::get('/changePassword', 'AdminController@showChangePasswordForm');
+    Route::post('/changePassword', 'AdminController@submitform')->name('admin.changepasswordsubmit');
+    Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
+});

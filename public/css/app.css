@@ -11508,7 +11508,7 @@ a.text-dark:focus {
 }
 
 #resultBasefree-female-1 > img {
-  width: 380px;
+  width: 350px;
 }
 
 #resultBasefree-male-1 {
@@ -11744,13 +11744,13 @@ a.text-dark:focus {
 }
 
 #resultHairfree-female-1 {
-    left: 280px;
+    left: 260px;
     top: 27px;
     transform: rotateY(-180deg) rotate(-17deg);
 }
 
 #resultHairfree-female-1 > img {
-  width: 80.5px;
+  width: 71px;
 }
 
 #resultHairfree-female-2 {
@@ -11860,13 +11860,13 @@ a.text-dark:focus {
 /* female eye*/
 
 #resultEyesfree-female-1 {
-    left: 309px;
-    top: 56px;
+    left: 287px;
+    top: 53px;
     transform: rotate(9deg);
 }
 
 #resultEyesfree-female-1 > img {
-  width: 40px;
+  width: 35px;
 }
 
 #resultEyesfree-female-2 {
@@ -12267,13 +12267,13 @@ a.text-dark:focus {
 
 /* For Lisp */
 #resultLipfree-female-1 {
-    left: 305px;
-    top: 90px;
+    left: 285px;
+    top: 85px;
     transform: rotateY(-180deg) rotate(-16deg);
 }
 
 #resultLipfree-female-1 > img {
-  width: 38px;
+  width: 30px;
 }
 
 #resultLipfree-female-2 {
@@ -12391,7 +12391,7 @@ a.text-dark:focus {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 3;
 }
 #resultBeardfree-male-1 {
     left: 184px;
@@ -12595,7 +12595,7 @@ a.text-dark:focus {
 
 /* End  Male Pose*/
 
-/* Male Eye*/
+/* Male Beard*/
 #resultBeardpremium-male-1 {
         left: 177px;
     top: 93px;
@@ -12625,7 +12625,7 @@ a.text-dark:focus {
     width: 70px;
 }
 
-/* End  Male Pose*/
+/* End  Male Beard*/
 
 
 
@@ -12753,7 +12753,7 @@ a.text-dark:focus {
     width: 73px;
 }
 #resultHairpremium-female-5 {
-    left: 155px;
+    left: 156px;
     top: -14px;
 }
 
@@ -12761,8 +12761,8 @@ a.text-dark:focus {
     width: 97px;
 }
 #resultHairpremium-female-6 {
-        left: 153px;
-    top: -12px;
+    left: 153px;
+    top: -11px;
     transform: rotateY(-180deg) rotate(4deg);
 }
 
@@ -12800,7 +12800,7 @@ a.text-dark:focus {
 
 #resultHairpremium-female-10 {
     left: 140px;
-    top: 12px;
+    top: 13px;
     transform: rotateY(-180deg) rotate(-4deg);
 }
 
@@ -12993,6 +12993,380 @@ a.text-dark:focus {
 
 
 
+/* =================== Valentine Version ==================== */
+/* ======================================================== */
+/* Male base */
+
+#resultBasevalentine-male-1 {
+    left: 44px;
+    top: 27px;
+}
+#resultBasevalentine-male-1 img {
+    width: 280px;
+}
+
+#resultBasevalentine-male-2 {
+    left: 69px;
+    top: 49px;
+}
+#resultBasevalentine-male-2 img {
+    width: 280px;
+}
+
+#resultBasevalentine-male-3 {
+    left: 25px;
+    top: 16px;
+}
+#resultBasevalentine-male-3 img {
+    width: 320px;
+}
+#resultBasevalentine-male-4 {
+    left: 32px;
+    top: 49px;
+
+}
+#resultBasevalentine-male-4 img {
+    width: 307px;
+}
+/* Male Pose*/
+#resultBasepremium-male-1 {
+        left: 103px;
+    top: 74px;
+}
+
+#resultBasepremium-male-1 > img {
+    width: 290px;
+}
+
+#resultBasepremium-male-2 {
+    left: -46px;
+    top: 25px;
+}
+
+#resultBasepremium-male-2 > img {
+    width: 430px;
+}
+
+#resultBasepremium-male-3 {
+    left: -98px;
+    top: 44px;
+}
+
+#resultBasepremium-male-3 > img {
+    width: 338px;
+}
+
+#resultBasepremium-male-4 {
+    left: -98px;
+    top: 44px;
+}
+
+#resultBasepremium-male-4 > img {
+    width: 338px;
+}
+
+
+/* Male Hair*/
+#resultHairvalentine-male-1 {
+    left: 176px;
+    top: 23px;
+    -webkit-transform: rotate(23deg);
+    transform: rotate(23deg);
+}
+
+#resultHairvalentine-male-1 > img {
+    width: 38px;
+}
+#resultHairvalentine-male-2 {
+    left: 191px;
+    top: 46px;
+}
+
+#resultHairvalentine-male-2 > img {
+    width: 43px;
+}
+
+#resultHairvalentine-male-3 {
+    left: 173px;
+    top: 22px;
+}
+
+#resultHairvalentine-male-3 > img {
+    width: 33px;
+}
+
+#resultHairvalentine-male-4 {
+    left: 154px;
+    top: 34px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultHairvalentine-male-4 > img {
+    width: 59px;
+}
+
+/* End  Male Hair*/
+
+
+
+/* Male Eye*/
+#resultEyesvalentine-male-1 {
+    left: 186px;
+    top: 40px;
+    transform: rotate(23deg);
+}
+
+#resultEyesvalentine-male-1 > img {
+    width: 16px;
+}
+
+#resultEyesvalentine-male-2 {
+    left: 202px;
+    top: 67px;
+}
+
+#resultEyesvalentine-male-2 > img {
+    width: 18px;
+}
+
+#resultEyesvalentine-male-3 {
+    left: 182px;
+    top: 36px;
+}
+
+#resultEyesvalentine-male-3 > img {
+    width: 13px;
+}
+
+
+#resultEyesvalentine-male-4 {
+    left: 173px;
+    top: 68px;
+}
+
+#resultEyesvalentine-male-4 > img {
+    width: 23px;
+}
+
+
+#resultBeardvalentine-male-1 {
+    left: 172px;
+    top: 34px;
+    transform: rotate(23deg);
+}
+
+#resultBeardvalentine-male-1 > img {
+    width: 37px;
+}
+#resultBeardvalentine-male-2 {
+        left: 191px;
+    top: 60px;
+}
+
+#resultBeardvalentine-male-2 > img {
+    width: 42px;
+}
+#resultBeardvalentine-male-3 {
+    left: 173px;
+    top: 33px;
+}
+
+#resultBeardvalentine-male-3 > img {
+    width: 32px;
+}
+#resultBeardvalentine-male-4 {
+    left: 155px;
+    top: 54px;
+    transform: rotateY(-180deg) rotate(0deg);
+}
+
+#resultBeardvalentine-male-4 > img {
+    width: 57px;
+}
+
+
+/* =================== Valentine Version ==================== */
+/* ======================================================== */
+
+/* FeMale Pose*/
+#resultBasevalentine-female-1 {
+    left: 55px;
+    top: 44px;
+}
+
+#resultBasevalentine-female-1 > img {
+    width: 295px;
+}
+
+#resultBasevalentine-female-2 {
+    left: 21px;
+    top: 26px;
+}
+
+#resultBasevalentine-female-2 > img {
+    width: 318px;
+}
+
+#resultBasevalentine-female-3 {
+    left: 37px;
+    top: 49px;
+}
+
+#resultBasevalentine-female-3 > img {
+    width: 305px;
+}
+
+#resultBasevalentine-female-4 {
+    left: 52px;
+    top: 68px;
+}
+
+#resultBasevalentine-female-4 > img {
+    width: 300px;
+}
+
+
+/* feMale Hair*/
+#resultHairvalentine-female-1 {
+    left: 152px;
+    top: 31px;
+    transform: rotateY(-180deg) rotate(-4deg);
+}
+
+#resultHairvalentine-female-1 > img {
+    width: 74px;
+}
+#resultHairvalentine-female-2 {
+    left: 147px;
+    top: 22px;
+}
+
+#resultHairvalentine-female-2 > img {
+    width: 50px;
+}
+
+#resultHairvalentine-female-3 {
+    left: 166px;
+    top: 21px;
+    transform: rotateY(-180deg) rotate(-25deg);
+}
+
+#resultHairvalentine-female-3 > img {
+    width: 64px;
+}
+
+#resultHairvalentine-female-4 {
+    left: 52px;
+    top: 48px;
+    transform: rotate(-30deg);
+}
+
+#resultHairvalentine-female-4 > img {
+    width: 100px;
+}
+
+/* End  Male Hair*/
+
+
+
+/* feMale Eye*/
+#resultEyesvalentine-female-1 {
+    left: 179px;
+    top: 54px;
+    transform: rotateY(-180deg) rotate(-4deg);
+}
+
+#resultEyesvalentine-female-1 > img {
+    width: 40px;
+}
+
+#resultEyesvalentine-female-2 {
+    left: 153px;
+    top: 40px;
+    transform: rotate(-9deg)
+}
+
+#resultEyesvalentine-female-2 > img {
+    width: 25px;
+}
+
+#resultEyesvalentine-female-3 {
+    left: 187px;
+    top: 44px;
+    transform: rotateY(-180deg) rotate(-25deg);
+}
+
+#resultEyesvalentine-female-3 > img {
+    width: 36px;
+}
+
+
+#resultEyesvalentine-female-4 {
+    left: 67px;
+    top: 93px;
+    transform: rotate(-23deg);
+}
+
+#resultEyesvalentine-female-4 > img {
+    width: 50px;
+}
+
+
+#resultLipvalentine-female-1 {
+    left: 175px;
+    top: 83px;
+    transform: rotateY(-180deg) rotate(-4deg);
+}
+
+#resultLipvalentine-female-1 > img {
+    width: 45px;
+}
+#resultLipvalentine-female-2 {
+    left: 152px;
+    top: 58px;
+    transform: rotate(-9deg);
+}
+
+#resultLipvalentine-female-2 > img {
+    width: 30px;
+}
+#resultLipvalentine-female-3 {
+    left: 178px;
+    top: 70px;
+    transform: rotateY(-180deg) rotate(-25deg);
+}
+
+#resultLipvalentine-female-3 > img {
+    width: 38px;
+}
+#resultLipvalentine-female-4 {
+    left: 76px;
+    top: 130px;
+    transform: rotate(-19deg);
+}
+
+#resultLipvalentine-female-4 > img {
+    width: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Start Saved Smoji */
 .savedSkin {
   position: absolute;
@@ -13117,3 +13491,87 @@ a.text-dark:focus {
 .blur{
   filter: blur(6px);
 }
+
+
+
+
+/*Start : Premium page*/
+section.pricing {
+  background: #f3f4f5;
+}
+.bgsyan {
+  background: #f3f4f5;
+}
+.opacityty05{
+  opacity: 0.5;
+}
+.activated{
+  background: #929eaa !important;
+}
+.planname{
+    font-size: 30px !important;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    color: #ffffff !important;
+    text-shadow: 1px 2px 3px #000;
+    background: #4e54c8;
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+/*End : Premium page*/

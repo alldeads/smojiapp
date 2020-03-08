@@ -44,6 +44,9 @@ return [
 
     'port' => env('MAIL_PORT', 587),
 
+    'from_name' => env('FROM_NAME', 'kunal'),
+    'from_email' => env('FROM_EMAIL', 'kunalsoni3331@gmail.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Global "From" Address
@@ -57,7 +60,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'name' => env('MAIL_FROM_NAME', 'Smoji'),
     ],
 
     /*
