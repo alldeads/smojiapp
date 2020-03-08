@@ -11681,6 +11681,15 @@ a.text-dark:focus {
   top: 11%;
 }
 
+#resultBasefree-female-11 {
+  top: 9%;
+  left: 16%;
+}
+
+#resultBasefree-female-11 > img {
+  width: 307px;
+}
+
 #resultBasefree-male-11 {
   left: -15%;
   top: 1%;
@@ -11837,14 +11846,14 @@ a.text-dark:focus {
 }
 
 #resultHairfree-female-11 {
-  -webkit-transform: rotate(8deg);
-  transform: rotate(8deg);
-    left: 305px;
-    top: 21px;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+    left: 155px;
+    top: 6px;
 }
 
 #resultHairfree-female-11 > img {
-  width: 90px;
+  width: 68px;
 }
 #resultHairfree-female-12 {
   -webkit-transform: rotate(9deg);
@@ -11956,16 +11965,17 @@ a.text-dark:focus {
   width: 30px;
 }
 
-#resultEyesfemale-11 {
-  -webkit-transform: rotate(14deg);
-   transform: rotate(14deg);
-    left: 329px;
-    top: 56px;
+#resultEyesfree-female-11 {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    left: 177px;
+    top: 24px;
 }
 
-#resultEyesfemale-11 > img {
+#resultEyesfree-female-11 > img {
   width: 40px;
 }
+
 #resultEyesfemale-12 {
   -webkit-transform: rotate(14deg);
   transform: rotate(14deg);
@@ -12371,14 +12381,14 @@ a.text-dark:focus {
 }
 
 #resultLipfree-female-11 {
-  -webkit-transform: rotate(14deg);
-   transform: rotate(14deg);
-    left: 329px;
+  -webkit-transform: rotateY(-180deg);
+   transform: rotateY(-180deg);
+    left: 181px;
     top: 56px;
 }
 
 #resultLipfree-female-11 > img {
-  width: 40px;
+  width: 35px;
 }
 #resultLipfree-female-12 {
   -webkit-transform: rotate(14deg);
