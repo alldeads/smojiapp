@@ -11700,12 +11700,12 @@ a.text-dark:focus {
 }
 
 #resultBasefree-male-12 {
-  left: 32%;
-  top: 10%;
+  left: -28px;
+  top: 12px;
 }
 
 #resultBasefree-male-12 > img {
-  width: 350px;
+  width: 335px;
 }
 
 #resultBasefree-male-13 {
@@ -12087,20 +12087,20 @@ a.text-dark:focus {
 
 #resultHairfree-male-11 {
   left: 134px;
-  top: -3px;
+  top: -6px;
 }
 
 #resultHairfree-male-11 > img {
-  width: 36px;
+  width: 37px;
 }
 
 #resultHairfree-male-12 {
-      left: 331px;
-    top: 20px;
+    left: 102px;
+    top: 4px;
 }
 
 #resultHairfree-male-12 > img {
-  width: 70px;
+  width: 67px;
 }
 
 #resultHairfree-male-13 {
@@ -12273,11 +12273,20 @@ a.text-dark:focus {
 
 #resultEyesfree-male-11 {
     left: 143px;
-    top: 13px;
+    top: 11px;
 }
 
 #resultEyesfree-male-11 > img {
     width: 18px;
+}
+
+#resultEyesfree-male-12 {
+    left: 117px;
+    top: 38px;
+}
+
+#resultEyesfree-male-12 > img {
+    width: 34px;
 }
 
 /* For eye */
@@ -12490,10 +12499,18 @@ a.text-dark:focus {
 
 #resultBeardfree-male-11 {
     left: 134px;
-    top: 8px;
+    top: 6px;
 }
 #resultBeardfree-male-11 > img {
     width: 38px;
+}
+
+#resultBeardfree-male-12 {
+    left: 105px;
+    top: 29px;
+}
+#resultBeardfree-male-12 > img {
+    width: 62px;
 }
 
 /* For Beards */
