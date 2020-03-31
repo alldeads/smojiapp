@@ -11699,6 +11699,15 @@ a.text-dark:focus {
   width: 380px;
 }
 
+#resultBasefree-female-12 {
+  top: 19px;
+  left: 31px;
+}
+
+#resultBasefree-female-12 > img {
+  width: 300px;
+}
+
 #resultBasefree-male-12 {
   left: -28px;
   top: 12px;
@@ -11856,14 +11865,14 @@ a.text-dark:focus {
   width: 68px;
 }
 #resultHairfree-female-12 {
-  -webkit-transform: rotate(9deg);
-       transform: rotate(9deg);
-    left: 150px;
-    top: -19px;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+    left: 140px;
+    top: -3px;
 }
 
 #resultHairfree-female-12 > img {
-  width: 90px;
+  width: 70px;
 }
 
 /* female eye*/
@@ -11976,15 +11985,15 @@ a.text-dark:focus {
   width: 40px;
 }
 
-#resultEyesfemale-12 {
-  -webkit-transform: rotate(14deg);
-  transform: rotate(14deg);
-    left: 167px;
-    top: 9px;
+#resultEyesfree-female-12 {
+  -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    left: 162px;
+    top: 17px;
 }
 
-#resultEyesfemale-12 > img {
-  width: 43px;
+#resultEyesfree-female-12 > img {
+  width: 42px;
 }
 
 /* female eye*/
@@ -12399,15 +12408,16 @@ a.text-dark:focus {
 #resultLipfree-female-11 > img {
   width: 35px;
 }
+
 #resultLipfree-female-12 {
-  -webkit-transform: rotate(14deg);
-  transform: rotate(14deg);
-    left: 167px;
-    top: 9px;
+  -webkit-transform: rotateY(-180deg);
+   transform: rotateY(-180deg);
+    left: 165px;
+    top: 48px;
 }
 
 #resultLipfree-female-12 > img {
-  width: 43px;
+  width: 40px;
 }
 /* For Lisp */
 
