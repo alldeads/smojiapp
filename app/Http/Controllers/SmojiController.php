@@ -37,7 +37,7 @@ class SmojiController extends Controller
 			'hair'  => 45,
 			'beard' => 13,
 			'stickers' => 21,
-			'free' => 12,
+			'free' => 13,
 			'premium' => 3,
 			'valentine' => 4,
 		);
